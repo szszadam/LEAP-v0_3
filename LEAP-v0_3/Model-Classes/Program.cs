@@ -22,10 +22,12 @@ namespace LEAP_v0_3
         static void Main()
         {
             /*First comment section*/
+            
             ReadDataFromDatabase();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new SingInWindow());
+            /*Second comment section*/
         }
     }
 }
