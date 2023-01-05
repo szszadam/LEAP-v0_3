@@ -21,6 +21,7 @@ namespace LEAP_v0_3
         [STAThread]
         static void Main()
         {
+            /*First comment section*/
             ReadDataFromDatabase();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
