@@ -8,6 +8,7 @@ namespace LEAP_v0_3
 {
     class User
     {
+        /*third comment section*/
         protected int _SQL_ID;
         protected string _familyName;
         protected string _firstName;
