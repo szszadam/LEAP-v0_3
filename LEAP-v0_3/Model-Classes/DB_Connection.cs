@@ -9,6 +9,7 @@ using System.Windows.Forms;
 
 namespace LEAP_v0_3
 {
+    /*seventh comment section*/
     static class DB_Connection
     {
         public static string DB_Path = Directory.GetParent(System.Environment.CurrentDirectory).Parent.FullName + "\\Database\\LEAP_DB.mdf";
