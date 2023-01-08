@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+LEAP_DB.mdf
+LEAP_DB_log.ldf
