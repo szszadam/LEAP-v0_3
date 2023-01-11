@@ -11,6 +11,8 @@ namespace LEAP_v0_3
 {
     static class Program
     {
+
+        /*first side dev comment section*/
         public static void ReadDataFromDatabase()
         {
             DB_Connection.ReadUserDataFromDatabase();
