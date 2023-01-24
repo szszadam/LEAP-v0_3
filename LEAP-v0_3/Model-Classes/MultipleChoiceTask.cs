@@ -11,8 +11,8 @@ namespace LEAP_v0_3
         List<AnswerOptions> _answerOptionsList = new List<AnswerOptions>();
         public struct AnswerOptions
         {
-            public string AnswerOptionText;
-            public bool isThisAnswerCorrect;
+            public string _answerOptionText;
+            public bool _isThisAnswerCorrect;
         }
         public List<AnswerOptions> AnswerOptionsList
         {
@@ -34,7 +34,7 @@ namespace LEAP_v0_3
             {
                 answerOptionAuxiliary = answerOptionRows[i].Split(new char[] { '▼' }, StringSplitOptions.RemoveEmptyEntries)[0];
                 isThisAnswerCorrectAuxiliary = Convert.ToBoolean(answerOptionRows[i].Split(new char[] { '▼' }, StringSplitOptions.RemoveEmptyEntries)[1]);
-                AnswerOptionsList.Add(new AnswerOptions { AnswerOptionText = answerOptionAuxiliary,isThisAnswerCorrect=isThisAnswerCorrectAuxiliary});
+                AnswerOptionsList.Add(new AnswerOptions { _answerOptionText = answerOptionAuxiliary,_isThisAnswerCorrect=isThisAnswerCorrectAuxiliary});
             }
         }
     }

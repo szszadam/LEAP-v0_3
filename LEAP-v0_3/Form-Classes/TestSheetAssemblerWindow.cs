@@ -164,8 +164,8 @@ namespace LEAP_v0_3
                     {
                         MultipleChoiceTask CurrentMultipleChoiceTask = DB_Connection.MultipleChoiceTaskList.FirstOrDefault(x => x.SQL_ID == CurrentTaskID);
                         string question_auxiliary = CurrentMultipleChoiceTask.TaskFormulation + ". Task:\n" + CurrentMultipleChoiceTask.TaskFormulation + " (" + CurrentMultipleChoiceTask.PointValue + " point(s))";
-                        List<string> answerOptions_Auxiliary = CurrentMultipleChoiceTask.AnswerOptionsList.Select(x => x.AnswerOptionText).ToList<string>();
-                        bool[] truthTableRow_Auxiliary = CurrentMultipleChoiceTask.AnswerOptionsList.Select(x => x.isThisAnswerCorrect).ToArray<bool>();
+                        List<string> answerOptions_Auxiliary = CurrentMultipleChoiceTask.AnswerOptionsList.Select(x => x._answerOptionText).ToList<string>();
+                        bool[] truthTableRow_Auxiliary = CurrentMultipleChoiceTask.AnswerOptionsList.Select(x => x._isThisAnswerCorrect).ToArray<bool>();
                         QuestionDisplay_FlowLP_1.Controls.Add(new MultipleChoiceTaskCheckerUC(question_auxiliary, answerOptions_Auxiliary, truthTableRow_Auxiliary) { Dock = DockStyle.Fill, AutoScroll = true });
                     }
                     else if (CurrentTaskChosen && DB_Connection.EssayTaskList.Exists(x => x.SQL_ID == CurrentTaskID))

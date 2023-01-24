@@ -88,7 +88,7 @@ namespace LEAP_v0_3
         }
         private void UserIdentificationNumber_comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //Made for testing and demonstration purposes only. Anyway, the fields are always empty!
+            //Made for testing and demonstration purposes only. Otherwise, the fields are always empty!
             Password_textBox.Text = UserIdentificationNumber_comboBox1.SelectedItem.ToString();
         }
 

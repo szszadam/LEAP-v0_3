@@ -79,16 +79,16 @@ namespace LEAP_v0_3
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 228F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 281F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(961, 531);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1281, 654);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // TaskSelectorDGV
@@ -125,15 +125,15 @@ namespace LEAP_v0_3
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.TaskSelectorDGV.DefaultCellStyle = dataGridViewCellStyle2;
             this.TaskSelectorDGV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TaskSelectorDGV.Location = new System.Drawing.Point(2, 2);
-            this.TaskSelectorDGV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TaskSelectorDGV.Location = new System.Drawing.Point(3, 2);
+            this.TaskSelectorDGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TaskSelectorDGV.MultiSelect = false;
             this.TaskSelectorDGV.Name = "TaskSelectorDGV";
             this.TaskSelectorDGV.RowHeadersVisible = false;
             this.TaskSelectorDGV.RowHeadersWidth = 51;
             this.TaskSelectorDGV.RowTemplate.Height = 24;
             this.TaskSelectorDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.TaskSelectorDGV.Size = new System.Drawing.Size(957, 224);
+            this.TaskSelectorDGV.Size = new System.Drawing.Size(1276, 277);
             this.TaskSelectorDGV.TabIndex = 21;
             this.TaskSelectorDGV.Click += new System.EventHandler(this.SelectingTaskDGV_Click);
             // 
@@ -203,10 +203,10 @@ namespace LEAP_v0_3
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(2, 319);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(3, 392);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(957, 4);
+            this.panel1.Size = new System.Drawing.Size(1276, 6);
             this.panel1.TabIndex = 2;
             // 
             // QuestionDisplay_FlowLP_1
@@ -214,39 +214,39 @@ namespace LEAP_v0_3
             this.QuestionDisplay_FlowLP_1.AutoScroll = true;
             this.QuestionDisplay_FlowLP_1.AutoSize = true;
             this.QuestionDisplay_FlowLP_1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QuestionDisplay_FlowLP_1.Location = new System.Drawing.Point(2, 327);
-            this.QuestionDisplay_FlowLP_1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.QuestionDisplay_FlowLP_1.Location = new System.Drawing.Point(3, 402);
+            this.QuestionDisplay_FlowLP_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.QuestionDisplay_FlowLP_1.Name = "QuestionDisplay_FlowLP_1";
-            this.QuestionDisplay_FlowLP_1.Size = new System.Drawing.Size(957, 202);
+            this.QuestionDisplay_FlowLP_1.Size = new System.Drawing.Size(1276, 250);
             this.QuestionDisplay_FlowLP_1.TabIndex = 3;
             this.QuestionDisplay_FlowLP_1.WrapContents = false;
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 289F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 385F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 289F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 385F));
             this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.UpdateTestSheetPreviewButton, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.CreateTestSheetButton, 2, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 270);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 332);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(957, 45);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1276, 56);
             this.tableLayoutPanel2.TabIndex = 22;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(291, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(388, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(375, 41);
+            this.pictureBox1.Size = new System.Drawing.Size(500, 52);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
@@ -262,11 +262,11 @@ namespace LEAP_v0_3
             this.UpdateTestSheetPreviewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdateTestSheetPreviewButton.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.UpdateTestSheetPreviewButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.UpdateTestSheetPreviewButton.Location = new System.Drawing.Point(8, 0);
-            this.UpdateTestSheetPreviewButton.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.UpdateTestSheetPreviewButton.MinimumSize = new System.Drawing.Size(116, 41);
+            this.UpdateTestSheetPreviewButton.Location = new System.Drawing.Point(11, 0);
+            this.UpdateTestSheetPreviewButton.Margin = new System.Windows.Forms.Padding(11, 0, 11, 0);
+            this.UpdateTestSheetPreviewButton.MinimumSize = new System.Drawing.Size(155, 50);
             this.UpdateTestSheetPreviewButton.Name = "UpdateTestSheetPreviewButton";
-            this.UpdateTestSheetPreviewButton.Size = new System.Drawing.Size(273, 45);
+            this.UpdateTestSheetPreviewButton.Size = new System.Drawing.Size(363, 56);
             this.UpdateTestSheetPreviewButton.TabIndex = 22;
             this.UpdateTestSheetPreviewButton.Text = "Refresh preview of test sheet";
             this.UpdateTestSheetPreviewButton.UseVisualStyleBackColor = false;
@@ -283,11 +283,11 @@ namespace LEAP_v0_3
             this.CreateTestSheetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CreateTestSheetButton.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.CreateTestSheetButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.CreateTestSheetButton.Location = new System.Drawing.Point(676, 0);
-            this.CreateTestSheetButton.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.CreateTestSheetButton.MinimumSize = new System.Drawing.Size(116, 41);
+            this.CreateTestSheetButton.Location = new System.Drawing.Point(902, 0);
+            this.CreateTestSheetButton.Margin = new System.Windows.Forms.Padding(11, 0, 11, 0);
+            this.CreateTestSheetButton.MinimumSize = new System.Drawing.Size(155, 50);
             this.CreateTestSheetButton.Name = "CreateTestSheetButton";
-            this.CreateTestSheetButton.Size = new System.Drawing.Size(273, 45);
+            this.CreateTestSheetButton.Size = new System.Drawing.Size(363, 56);
             this.CreateTestSheetButton.TabIndex = 23;
             this.CreateTestSheetButton.Text = "Create test sheet";
             this.CreateTestSheetButton.UseVisualStyleBackColor = false;
@@ -297,23 +297,23 @@ namespace LEAP_v0_3
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(2, 262);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(3, 322);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(957, 4);
+            this.panel2.Size = new System.Drawing.Size(1276, 6);
             this.panel2.TabIndex = 23;
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 9;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 188F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 188F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 251F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 251F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 240F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label4, 6, 0);
@@ -324,12 +324,12 @@ namespace LEAP_v0_3
             this.tableLayoutPanel3.Controls.Add(this.TimeNUD, 7, 0);
             this.tableLayoutPanel3.Controls.Add(this.SubjectsComboBox1, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(2, 230);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 283);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(957, 28);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1276, 35);
             this.tableLayoutPanel3.TabIndex = 24;
             // 
             // label1
@@ -338,10 +338,9 @@ namespace LEAP_v0_3
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Gill Sans MT", 9.5F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(2, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 28);
+            this.label1.Size = new System.Drawing.Size(94, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "Subject:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -352,10 +351,9 @@ namespace LEAP_v0_3
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("Gill Sans MT", 9.5F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(709, 0);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(947, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(176, 28);
+            this.label4.Size = new System.Drawing.Size(234, 35);
             this.label4.TabIndex = 3;
             this.label4.Text = "Available time [minute] :";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -364,8 +362,8 @@ namespace LEAP_v0_3
             // 
             this.GradeNUD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GradeNUD.Font = new System.Drawing.Font("Gill Sans MT", 9.5F, System.Drawing.FontStyle.Bold);
-            this.GradeNUD.Location = new System.Drawing.Point(649, 2);
-            this.GradeNUD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GradeNUD.Location = new System.Drawing.Point(867, 2);
+            this.GradeNUD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GradeNUD.Maximum = new decimal(new int[] {
             14,
             0,
@@ -377,7 +375,7 @@ namespace LEAP_v0_3
             0,
             0});
             this.GradeNUD.Name = "GradeNUD";
-            this.GradeNUD.Size = new System.Drawing.Size(56, 26);
+            this.GradeNUD.Size = new System.Drawing.Size(74, 26);
             this.GradeNUD.TabIndex = 7;
             this.GradeNUD.Value = new decimal(new int[] {
             9,
@@ -391,10 +389,9 @@ namespace LEAP_v0_3
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Gill Sans MT", 9.5F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(551, 0);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(736, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 28);
+            this.label3.Size = new System.Drawing.Size(125, 35);
             this.label3.TabIndex = 2;
             this.label3.Text = "Grade:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -403,10 +400,10 @@ namespace LEAP_v0_3
             // 
             this.TopicTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TopicTextBox.Font = new System.Drawing.Font("Gill Sans MT", 9.5F, System.Drawing.FontStyle.Bold);
-            this.TopicTextBox.Location = new System.Drawing.Point(363, 2);
-            this.TopicTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TopicTextBox.Location = new System.Drawing.Point(485, 2);
+            this.TopicTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TopicTextBox.Name = "TopicTextBox";
-            this.TopicTextBox.Size = new System.Drawing.Size(184, 26);
+            this.TopicTextBox.Size = new System.Drawing.Size(245, 26);
             this.TopicTextBox.TabIndex = 5;
             // 
             // label2
@@ -415,10 +412,9 @@ namespace LEAP_v0_3
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Gill Sans MT", 9.5F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(265, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(354, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 28);
+            this.label2.Size = new System.Drawing.Size(125, 35);
             this.label2.TabIndex = 1;
             this.label2.Text = "Topic:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -427,8 +423,8 @@ namespace LEAP_v0_3
             // 
             this.TimeNUD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TimeNUD.Font = new System.Drawing.Font("Gill Sans MT", 9.5F, System.Drawing.FontStyle.Bold);
-            this.TimeNUD.Location = new System.Drawing.Point(889, 2);
-            this.TimeNUD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TimeNUD.Location = new System.Drawing.Point(1187, 2);
+            this.TimeNUD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TimeNUD.Maximum = new decimal(new int[] {
             240,
             0,
@@ -440,7 +436,7 @@ namespace LEAP_v0_3
             0,
             0});
             this.TimeNUD.Name = "TimeNUD";
-            this.TimeNUD.Size = new System.Drawing.Size(56, 26);
+            this.TimeNUD.Size = new System.Drawing.Size(74, 26);
             this.TimeNUD.TabIndex = 6;
             this.TimeNUD.Value = new decimal(new int[] {
             1,
@@ -453,23 +449,23 @@ namespace LEAP_v0_3
             this.SubjectsComboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SubjectsComboBox1.Font = new System.Drawing.Font("Gill Sans MT", 9.5F, System.Drawing.FontStyle.Bold);
             this.SubjectsComboBox1.FormattingEnabled = true;
-            this.SubjectsComboBox1.Location = new System.Drawing.Point(77, 2);
-            this.SubjectsComboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SubjectsComboBox1.Location = new System.Drawing.Point(103, 2);
+            this.SubjectsComboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubjectsComboBox1.Name = "SubjectsComboBox1";
-            this.SubjectsComboBox1.Size = new System.Drawing.Size(184, 31);
+            this.SubjectsComboBox1.Size = new System.Drawing.Size(245, 31);
             this.SubjectsComboBox1.TabIndex = 8;
             // 
             // TestSheetAssemblerWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.SlateGray;
-            this.ClientSize = new System.Drawing.Size(961, 531);
+            this.ClientSize = new System.Drawing.Size(1281, 654);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MinimumSize = new System.Drawing.Size(979, 578);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(1299, 701);
             this.Name = "TestSheetAssemblerWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LEAP: Assembling test sheet";

@@ -48,10 +48,10 @@ namespace LEAP_v0_3
             this.Questions_FlowLP_1.AutoScroll = true;
             this.Questions_FlowLP_1.AutoSize = true;
             this.Questions_FlowLP_1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Questions_FlowLP_1.Location = new System.Drawing.Point(2, 91);
-            this.Questions_FlowLP_1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Questions_FlowLP_1.Location = new System.Drawing.Point(3, 112);
+            this.Questions_FlowLP_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Questions_FlowLP_1.Name = "Questions_FlowLP_1";
-            this.Questions_FlowLP_1.Size = new System.Drawing.Size(957, 362);
+            this.Questions_FlowLP_1.Size = new System.Drawing.Size(1276, 446);
             this.Questions_FlowLP_1.TabIndex = 0;
             this.Questions_FlowLP_1.WrapContents = false;
             // 
@@ -64,13 +64,13 @@ namespace LEAP_v0_3
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(961, 455);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1281, 560);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // tableLayoutPanel2
@@ -85,23 +85,22 @@ namespace LEAP_v0_3
             this.tableLayoutPanel2.Controls.Add(this.countdownLabel, 3, 1);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 2, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(957, 77);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1276, 96);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // dataLabel
             // 
             this.dataLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataLabel.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Bold);
-            this.dataLabel.Location = new System.Drawing.Point(121, 15);
-            this.dataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.dataLabel.Location = new System.Drawing.Point(162, 19);
             this.dataLabel.Name = "dataLabel";
-            this.dataLabel.Size = new System.Drawing.Size(283, 62);
+            this.dataLabel.Size = new System.Drawing.Size(376, 77);
             this.dataLabel.TabIndex = 17;
             this.dataLabel.Text = "Student and test sheet information:";
             // 
@@ -116,11 +115,11 @@ namespace LEAP_v0_3
             this.SubmitTestSheetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SubmitTestSheetButton.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.SubmitTestSheetButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.SubmitTestSheetButton.Location = new System.Drawing.Point(2, 17);
-            this.SubmitTestSheetButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.SubmitTestSheetButton.MinimumSize = new System.Drawing.Size(116, 55);
+            this.SubmitTestSheetButton.Location = new System.Drawing.Point(3, 21);
+            this.SubmitTestSheetButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SubmitTestSheetButton.MinimumSize = new System.Drawing.Size(155, 68);
             this.SubmitTestSheetButton.Name = "SubmitTestSheetButton";
-            this.SubmitTestSheetButton.Size = new System.Drawing.Size(116, 58);
+            this.SubmitTestSheetButton.Size = new System.Drawing.Size(155, 73);
             this.SubmitTestSheetButton.TabIndex = 16;
             this.SubmitTestSheetButton.Text = "Submit\r\ntest sheet";
             this.SubmitTestSheetButton.UseVisualStyleBackColor = false;
@@ -131,8 +130,7 @@ namespace LEAP_v0_3
             this.countdownLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.countdownLabel.AutoSize = true;
             this.countdownLabel.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Bold);
-            this.countdownLabel.Location = new System.Drawing.Point(811, 15);
-            this.countdownLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.countdownLabel.Location = new System.Drawing.Point(1129, 19);
             this.countdownLabel.Name = "countdownLabel";
             this.countdownLabel.Size = new System.Drawing.Size(144, 25);
             this.countdownLabel.TabIndex = 18;
@@ -142,10 +140,10 @@ namespace LEAP_v0_3
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(408, 17);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(544, 21);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(139, 58);
+            this.pictureBox1.Size = new System.Drawing.Size(185, 73);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
@@ -154,23 +152,23 @@ namespace LEAP_v0_3
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(2, 83);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(3, 102);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(957, 4);
+            this.panel1.Size = new System.Drawing.Size(1276, 6);
             this.panel1.TabIndex = 2;
             // 
             // TestSheetWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.SlateGray;
-            this.ClientSize = new System.Drawing.Size(961, 455);
+            this.ClientSize = new System.Drawing.Size(1281, 560);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MinimumSize = new System.Drawing.Size(979, 413);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(1299, 497);
             this.Name = "TestSheetWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LEAP: Solve test sheet";

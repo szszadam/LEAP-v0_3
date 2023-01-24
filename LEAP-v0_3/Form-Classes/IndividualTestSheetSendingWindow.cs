@@ -30,9 +30,9 @@ namespace LEAP_v0_3
         private void IndividualTestSheetSendingWindow_Load(object sender, EventArgs e)
         {
             FillUserSelectorDGV();
-            EditedTestSheetSelectorDGV_Feltoltese();
+            FillEditedTestSheetSelectorDGV();
         }
-        private void EditedTestSheetSelectorDGV_Feltoltese()
+        private void FillEditedTestSheetSelectorDGV()
         {
             int EditedTestSheetID_Auxiliary;
             string testSheetSubject_Auxiliary;

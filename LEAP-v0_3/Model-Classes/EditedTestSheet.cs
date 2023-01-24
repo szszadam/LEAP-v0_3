@@ -106,7 +106,7 @@ namespace LEAP_v0_3
                         __multipleChoiceTruthTable[j] = new bool[currentNumberOfAnswerOptions];
                         for (int k = 0; k < __multipleChoiceTruthTable[j].Length; k++)
                         {
-                            __multipleChoiceTruthTable[j][k] = currentTask.AnswerOptionsList[k].isThisAnswerCorrect;
+                            __multipleChoiceTruthTable[j][k] = currentTask.AnswerOptionsList[k]._isThisAnswerCorrect;
                         }
                         j++;
                     }

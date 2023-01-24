@@ -83,10 +83,9 @@ namespace LEAP_v0_3
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(2, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(184, 32);
+            this.label2.Size = new System.Drawing.Size(245, 39);
             this.label2.TabIndex = 1;
             this.label2.Text = "Subject:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -97,10 +96,9 @@ namespace LEAP_v0_3
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(2, 32);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(3, 39);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(184, 73);
+            this.label3.Size = new System.Drawing.Size(245, 90);
             this.label3.TabIndex = 2;
             this.label3.Text = "Task formulation:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -116,10 +114,10 @@ namespace LEAP_v0_3
             this.CreateTaskButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CreateTaskButton.Font = new System.Drawing.Font("Gill Sans MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.CreateTaskButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.CreateTaskButton.Location = new System.Drawing.Point(190, 642);
-            this.CreateTaskButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CreateTaskButton.Location = new System.Drawing.Point(254, 787);
+            this.CreateTaskButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CreateTaskButton.Name = "CreateTaskButton";
-            this.CreateTaskButton.Size = new System.Drawing.Size(878, 201);
+            this.CreateTaskButton.Size = new System.Drawing.Size(754, 56);
             this.CreateTaskButton.TabIndex = 5;
             this.CreateTaskButton.Text = "Create multiple choice task";
             this.CreateTaskButton.UseVisualStyleBackColor = false;
@@ -131,10 +129,9 @@ namespace LEAP_v0_3
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(2, 105);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(3, 129);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(184, 37);
+            this.label4.Size = new System.Drawing.Size(245, 46);
             this.label4.TabIndex = 8;
             this.label4.Text = "Point value:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -143,9 +140,9 @@ namespace LEAP_v0_3
             // 
             this.tableLayoutPanel1.AutoScroll = true;
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 188F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 251F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 149F));
             this.tableLayoutPanel1.Controls.Add(this.TaskFormulationRTB, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.AnswerOptionRTB_1, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.AnswerOptionRTB_2, 1, 5);
@@ -188,25 +185,25 @@ namespace LEAP_v0_3
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 15;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(886, 612);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1181, 753);
             this.tableLayoutPanel1.TabIndex = 11;
             // 
             // TaskFormulationRTB
@@ -215,11 +212,11 @@ namespace LEAP_v0_3
             this.TaskFormulationRTB.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TaskFormulationRTB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TaskFormulationRTB.Font = new System.Drawing.Font("Gill Sans MT", 10F);
-            this.TaskFormulationRTB.Location = new System.Drawing.Point(190, 34);
-            this.TaskFormulationRTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TaskFormulationRTB.Location = new System.Drawing.Point(254, 41);
+            this.TaskFormulationRTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TaskFormulationRTB.Name = "TaskFormulationRTB";
             this.TaskFormulationRTB.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.TaskFormulationRTB.Size = new System.Drawing.Size(878, 69);
+            this.TaskFormulationRTB.Size = new System.Drawing.Size(754, 86);
             this.TaskFormulationRTB.TabIndex = 11;
             this.TaskFormulationRTB.Text = "";
             // 
@@ -229,11 +226,11 @@ namespace LEAP_v0_3
             this.AnswerOptionRTB_1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.AnswerOptionRTB_1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AnswerOptionRTB_1.Font = new System.Drawing.Font("Gill Sans MT", 10F);
-            this.AnswerOptionRTB_1.Location = new System.Drawing.Point(190, 152);
-            this.AnswerOptionRTB_1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AnswerOptionRTB_1.Location = new System.Drawing.Point(254, 187);
+            this.AnswerOptionRTB_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AnswerOptionRTB_1.Name = "AnswerOptionRTB_1";
             this.AnswerOptionRTB_1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.AnswerOptionRTB_1.Size = new System.Drawing.Size(878, 45);
+            this.AnswerOptionRTB_1.Size = new System.Drawing.Size(754, 56);
             this.AnswerOptionRTB_1.TabIndex = 14;
             this.AnswerOptionRTB_1.Text = "";
             // 
@@ -243,11 +240,11 @@ namespace LEAP_v0_3
             this.AnswerOptionRTB_2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.AnswerOptionRTB_2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AnswerOptionRTB_2.Font = new System.Drawing.Font("Gill Sans MT", 10F);
-            this.AnswerOptionRTB_2.Location = new System.Drawing.Point(190, 201);
-            this.AnswerOptionRTB_2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AnswerOptionRTB_2.Location = new System.Drawing.Point(254, 247);
+            this.AnswerOptionRTB_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AnswerOptionRTB_2.Name = "AnswerOptionRTB_2";
             this.AnswerOptionRTB_2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.AnswerOptionRTB_2.Size = new System.Drawing.Size(878, 45);
+            this.AnswerOptionRTB_2.Size = new System.Drawing.Size(754, 56);
             this.AnswerOptionRTB_2.TabIndex = 15;
             this.AnswerOptionRTB_2.Text = "";
             // 
@@ -257,11 +254,11 @@ namespace LEAP_v0_3
             this.AnswerOptionRTB_3.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.AnswerOptionRTB_3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AnswerOptionRTB_3.Font = new System.Drawing.Font("Gill Sans MT", 10F);
-            this.AnswerOptionRTB_3.Location = new System.Drawing.Point(190, 250);
-            this.AnswerOptionRTB_3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AnswerOptionRTB_3.Location = new System.Drawing.Point(254, 307);
+            this.AnswerOptionRTB_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AnswerOptionRTB_3.Name = "AnswerOptionRTB_3";
             this.AnswerOptionRTB_3.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.AnswerOptionRTB_3.Size = new System.Drawing.Size(878, 45);
+            this.AnswerOptionRTB_3.Size = new System.Drawing.Size(754, 56);
             this.AnswerOptionRTB_3.TabIndex = 16;
             this.AnswerOptionRTB_3.Text = "";
             // 
@@ -271,11 +268,11 @@ namespace LEAP_v0_3
             this.AnswerOptionRTB_4.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.AnswerOptionRTB_4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AnswerOptionRTB_4.Font = new System.Drawing.Font("Gill Sans MT", 10F);
-            this.AnswerOptionRTB_4.Location = new System.Drawing.Point(190, 299);
-            this.AnswerOptionRTB_4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AnswerOptionRTB_4.Location = new System.Drawing.Point(254, 367);
+            this.AnswerOptionRTB_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AnswerOptionRTB_4.Name = "AnswerOptionRTB_4";
             this.AnswerOptionRTB_4.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.AnswerOptionRTB_4.Size = new System.Drawing.Size(878, 45);
+            this.AnswerOptionRTB_4.Size = new System.Drawing.Size(754, 56);
             this.AnswerOptionRTB_4.TabIndex = 17;
             this.AnswerOptionRTB_4.Text = "";
             // 
@@ -285,11 +282,11 @@ namespace LEAP_v0_3
             this.AnswerOptionRTB_6.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.AnswerOptionRTB_6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AnswerOptionRTB_6.Font = new System.Drawing.Font("Gill Sans MT", 10F);
-            this.AnswerOptionRTB_6.Location = new System.Drawing.Point(190, 397);
-            this.AnswerOptionRTB_6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AnswerOptionRTB_6.Location = new System.Drawing.Point(254, 487);
+            this.AnswerOptionRTB_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AnswerOptionRTB_6.Name = "AnswerOptionRTB_6";
             this.AnswerOptionRTB_6.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.AnswerOptionRTB_6.Size = new System.Drawing.Size(878, 45);
+            this.AnswerOptionRTB_6.Size = new System.Drawing.Size(754, 56);
             this.AnswerOptionRTB_6.TabIndex = 22;
             this.AnswerOptionRTB_6.Text = "";
             // 
@@ -299,11 +296,11 @@ namespace LEAP_v0_3
             this.AnswerOptionRTB_7.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.AnswerOptionRTB_7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AnswerOptionRTB_7.Font = new System.Drawing.Font("Gill Sans MT", 10F);
-            this.AnswerOptionRTB_7.Location = new System.Drawing.Point(190, 446);
-            this.AnswerOptionRTB_7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AnswerOptionRTB_7.Location = new System.Drawing.Point(254, 547);
+            this.AnswerOptionRTB_7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AnswerOptionRTB_7.Name = "AnswerOptionRTB_7";
             this.AnswerOptionRTB_7.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.AnswerOptionRTB_7.Size = new System.Drawing.Size(878, 45);
+            this.AnswerOptionRTB_7.Size = new System.Drawing.Size(754, 56);
             this.AnswerOptionRTB_7.TabIndex = 21;
             this.AnswerOptionRTB_7.Text = "";
             // 
@@ -313,11 +310,11 @@ namespace LEAP_v0_3
             this.AnswerOptionRTB_5.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.AnswerOptionRTB_5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AnswerOptionRTB_5.Font = new System.Drawing.Font("Gill Sans MT", 10F);
-            this.AnswerOptionRTB_5.Location = new System.Drawing.Point(190, 348);
-            this.AnswerOptionRTB_5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AnswerOptionRTB_5.Location = new System.Drawing.Point(254, 427);
+            this.AnswerOptionRTB_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AnswerOptionRTB_5.Name = "AnswerOptionRTB_5";
             this.AnswerOptionRTB_5.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.AnswerOptionRTB_5.Size = new System.Drawing.Size(878, 45);
+            this.AnswerOptionRTB_5.Size = new System.Drawing.Size(754, 56);
             this.AnswerOptionRTB_5.TabIndex = 20;
             this.AnswerOptionRTB_5.Text = "";
             // 
@@ -327,11 +324,11 @@ namespace LEAP_v0_3
             this.AnswerOptionRTB_8.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.AnswerOptionRTB_8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AnswerOptionRTB_8.Font = new System.Drawing.Font("Gill Sans MT", 10F);
-            this.AnswerOptionRTB_8.Location = new System.Drawing.Point(190, 495);
-            this.AnswerOptionRTB_8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AnswerOptionRTB_8.Location = new System.Drawing.Point(254, 607);
+            this.AnswerOptionRTB_8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AnswerOptionRTB_8.Name = "AnswerOptionRTB_8";
             this.AnswerOptionRTB_8.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.AnswerOptionRTB_8.Size = new System.Drawing.Size(878, 45);
+            this.AnswerOptionRTB_8.Size = new System.Drawing.Size(754, 56);
             this.AnswerOptionRTB_8.TabIndex = 19;
             this.AnswerOptionRTB_8.Text = "";
             // 
@@ -341,11 +338,11 @@ namespace LEAP_v0_3
             this.AnswerOptionRTB_9.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.AnswerOptionRTB_9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AnswerOptionRTB_9.Font = new System.Drawing.Font("Gill Sans MT", 10F);
-            this.AnswerOptionRTB_9.Location = new System.Drawing.Point(190, 544);
-            this.AnswerOptionRTB_9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AnswerOptionRTB_9.Location = new System.Drawing.Point(254, 667);
+            this.AnswerOptionRTB_9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AnswerOptionRTB_9.Name = "AnswerOptionRTB_9";
             this.AnswerOptionRTB_9.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.AnswerOptionRTB_9.Size = new System.Drawing.Size(878, 45);
+            this.AnswerOptionRTB_9.Size = new System.Drawing.Size(754, 56);
             this.AnswerOptionRTB_9.TabIndex = 18;
             this.AnswerOptionRTB_9.Text = "";
             // 
@@ -355,11 +352,11 @@ namespace LEAP_v0_3
             this.AnswerOptionRTB_10.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.AnswerOptionRTB_10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AnswerOptionRTB_10.Font = new System.Drawing.Font("Gill Sans MT", 10F);
-            this.AnswerOptionRTB_10.Location = new System.Drawing.Point(190, 593);
-            this.AnswerOptionRTB_10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AnswerOptionRTB_10.Location = new System.Drawing.Point(254, 727);
+            this.AnswerOptionRTB_10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AnswerOptionRTB_10.Name = "AnswerOptionRTB_10";
             this.AnswerOptionRTB_10.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.AnswerOptionRTB_10.Size = new System.Drawing.Size(878, 45);
+            this.AnswerOptionRTB_10.Size = new System.Drawing.Size(754, 56);
             this.AnswerOptionRTB_10.TabIndex = 24;
             this.AnswerOptionRTB_10.Text = "";
             // 
@@ -367,40 +364,40 @@ namespace LEAP_v0_3
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 144);
+            this.panel1.Location = new System.Drawing.Point(0, 177);
             this.panel1.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(188, 4);
+            this.panel1.Size = new System.Drawing.Size(251, 6);
             this.panel1.TabIndex = 25;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(188, 144);
+            this.panel2.Location = new System.Drawing.Point(251, 177);
             this.panel2.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(882, 4);
+            this.panel2.Size = new System.Drawing.Size(760, 6);
             this.panel2.TabIndex = 26;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(1070, 144);
+            this.panel3.Location = new System.Drawing.Point(1011, 177);
             this.panel3.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(112, 4);
+            this.panel3.Size = new System.Drawing.Size(149, 6);
             this.panel3.TabIndex = 27;
             // 
             // TrueAnswerOptionCheckBox_1
             // 
             this.TrueAnswerOptionCheckBox_1.AutoSize = true;
             this.TrueAnswerOptionCheckBox_1.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
-            this.TrueAnswerOptionCheckBox_1.Location = new System.Drawing.Point(1072, 152);
-            this.TrueAnswerOptionCheckBox_1.Margin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.TrueAnswerOptionCheckBox_1.Location = new System.Drawing.Point(1014, 187);
+            this.TrueAnswerOptionCheckBox_1.Margin = new System.Windows.Forms.Padding(3, 2, 0, 2);
             this.TrueAnswerOptionCheckBox_1.Name = "TrueAnswerOptionCheckBox_1";
-            this.TrueAnswerOptionCheckBox_1.Size = new System.Drawing.Size(110, 29);
+            this.TrueAnswerOptionCheckBox_1.Size = new System.Drawing.Size(134, 29);
             this.TrueAnswerOptionCheckBox_1.TabIndex = 28;
             this.TrueAnswerOptionCheckBox_1.Text = "True answer";
             this.TrueAnswerOptionCheckBox_1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -412,10 +409,10 @@ namespace LEAP_v0_3
             this.SubjectsComboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SubjectsComboBox1.Font = new System.Drawing.Font("Gill Sans MT", 10F);
             this.SubjectsComboBox1.FormattingEnabled = true;
-            this.SubjectsComboBox1.Location = new System.Drawing.Point(190, 2);
-            this.SubjectsComboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SubjectsComboBox1.Location = new System.Drawing.Point(254, 2);
+            this.SubjectsComboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubjectsComboBox1.Name = "SubjectsComboBox1";
-            this.SubjectsComboBox1.Size = new System.Drawing.Size(878, 33);
+            this.SubjectsComboBox1.Size = new System.Drawing.Size(754, 33);
             this.SubjectsComboBox1.TabIndex = 29;
             // 
             // label5
@@ -424,10 +421,9 @@ namespace LEAP_v0_3
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(2, 199);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(3, 245);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(184, 49);
+            this.label5.Size = new System.Drawing.Size(245, 60);
             this.label5.TabIndex = 31;
             this.label5.Text = "2. answer option:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -438,10 +434,9 @@ namespace LEAP_v0_3
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(2, 150);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(3, 185);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(184, 49);
+            this.label6.Size = new System.Drawing.Size(245, 60);
             this.label6.TabIndex = 32;
             this.label6.Text = "1. answer option:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -452,10 +447,9 @@ namespace LEAP_v0_3
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(2, 248);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(3, 305);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 49);
+            this.label1.Size = new System.Drawing.Size(245, 60);
             this.label1.TabIndex = 33;
             this.label1.Text = "3. answer option:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -466,10 +460,9 @@ namespace LEAP_v0_3
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(2, 297);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(3, 365);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(184, 49);
+            this.label7.Size = new System.Drawing.Size(245, 60);
             this.label7.TabIndex = 34;
             this.label7.Text = "4. answer option:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -480,10 +473,9 @@ namespace LEAP_v0_3
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label8.Location = new System.Drawing.Point(2, 346);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(3, 425);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(184, 49);
+            this.label8.Size = new System.Drawing.Size(245, 60);
             this.label8.TabIndex = 35;
             this.label8.Text = "5. answer option:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -494,10 +486,9 @@ namespace LEAP_v0_3
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label9.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label9.Location = new System.Drawing.Point(2, 395);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(3, 485);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(184, 49);
+            this.label9.Size = new System.Drawing.Size(245, 60);
             this.label9.TabIndex = 36;
             this.label9.Text = "6. answer option:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -508,10 +499,9 @@ namespace LEAP_v0_3
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label10.Location = new System.Drawing.Point(2, 444);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(3, 545);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(184, 49);
+            this.label10.Size = new System.Drawing.Size(245, 60);
             this.label10.TabIndex = 37;
             this.label10.Text = "7. answer option:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -522,10 +512,9 @@ namespace LEAP_v0_3
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label11.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label11.Location = new System.Drawing.Point(2, 493);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(3, 605);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(184, 49);
+            this.label11.Size = new System.Drawing.Size(245, 60);
             this.label11.TabIndex = 38;
             this.label11.Text = "8. answer option:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -536,10 +525,9 @@ namespace LEAP_v0_3
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label12.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label12.Location = new System.Drawing.Point(2, 542);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(3, 665);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(184, 49);
+            this.label12.Size = new System.Drawing.Size(245, 60);
             this.label12.TabIndex = 39;
             this.label12.Text = "9. answer option:";
             this.label12.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -550,10 +538,9 @@ namespace LEAP_v0_3
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label13.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label13.Location = new System.Drawing.Point(2, 591);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(3, 725);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(184, 49);
+            this.label13.Size = new System.Drawing.Size(245, 60);
             this.label13.TabIndex = 40;
             this.label13.Text = "10. answer option:";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -562,10 +549,10 @@ namespace LEAP_v0_3
             // 
             this.TrueAnswerOptionCheckBox_2.AutoSize = true;
             this.TrueAnswerOptionCheckBox_2.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
-            this.TrueAnswerOptionCheckBox_2.Location = new System.Drawing.Point(1072, 201);
-            this.TrueAnswerOptionCheckBox_2.Margin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.TrueAnswerOptionCheckBox_2.Location = new System.Drawing.Point(1014, 247);
+            this.TrueAnswerOptionCheckBox_2.Margin = new System.Windows.Forms.Padding(3, 2, 0, 2);
             this.TrueAnswerOptionCheckBox_2.Name = "TrueAnswerOptionCheckBox_2";
-            this.TrueAnswerOptionCheckBox_2.Size = new System.Drawing.Size(110, 29);
+            this.TrueAnswerOptionCheckBox_2.Size = new System.Drawing.Size(134, 29);
             this.TrueAnswerOptionCheckBox_2.TabIndex = 41;
             this.TrueAnswerOptionCheckBox_2.Text = "True answer";
             this.TrueAnswerOptionCheckBox_2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -576,10 +563,10 @@ namespace LEAP_v0_3
             // 
             this.TrueAnswerOptionCheckBox_3.AutoSize = true;
             this.TrueAnswerOptionCheckBox_3.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
-            this.TrueAnswerOptionCheckBox_3.Location = new System.Drawing.Point(1072, 250);
-            this.TrueAnswerOptionCheckBox_3.Margin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.TrueAnswerOptionCheckBox_3.Location = new System.Drawing.Point(1014, 307);
+            this.TrueAnswerOptionCheckBox_3.Margin = new System.Windows.Forms.Padding(3, 2, 0, 2);
             this.TrueAnswerOptionCheckBox_3.Name = "TrueAnswerOptionCheckBox_3";
-            this.TrueAnswerOptionCheckBox_3.Size = new System.Drawing.Size(110, 29);
+            this.TrueAnswerOptionCheckBox_3.Size = new System.Drawing.Size(134, 29);
             this.TrueAnswerOptionCheckBox_3.TabIndex = 42;
             this.TrueAnswerOptionCheckBox_3.Text = "True answer";
             this.TrueAnswerOptionCheckBox_3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -590,10 +577,10 @@ namespace LEAP_v0_3
             // 
             this.TrueAnswerOptionCheckBox_4.AutoSize = true;
             this.TrueAnswerOptionCheckBox_4.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
-            this.TrueAnswerOptionCheckBox_4.Location = new System.Drawing.Point(1072, 299);
-            this.TrueAnswerOptionCheckBox_4.Margin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.TrueAnswerOptionCheckBox_4.Location = new System.Drawing.Point(1014, 367);
+            this.TrueAnswerOptionCheckBox_4.Margin = new System.Windows.Forms.Padding(3, 2, 0, 2);
             this.TrueAnswerOptionCheckBox_4.Name = "TrueAnswerOptionCheckBox_4";
-            this.TrueAnswerOptionCheckBox_4.Size = new System.Drawing.Size(110, 29);
+            this.TrueAnswerOptionCheckBox_4.Size = new System.Drawing.Size(134, 29);
             this.TrueAnswerOptionCheckBox_4.TabIndex = 43;
             this.TrueAnswerOptionCheckBox_4.Text = "True answer";
             this.TrueAnswerOptionCheckBox_4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -604,10 +591,10 @@ namespace LEAP_v0_3
             // 
             this.TrueAnswerOptionCheckBox_5.AutoSize = true;
             this.TrueAnswerOptionCheckBox_5.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
-            this.TrueAnswerOptionCheckBox_5.Location = new System.Drawing.Point(1072, 348);
-            this.TrueAnswerOptionCheckBox_5.Margin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.TrueAnswerOptionCheckBox_5.Location = new System.Drawing.Point(1014, 427);
+            this.TrueAnswerOptionCheckBox_5.Margin = new System.Windows.Forms.Padding(3, 2, 0, 2);
             this.TrueAnswerOptionCheckBox_5.Name = "TrueAnswerOptionCheckBox_5";
-            this.TrueAnswerOptionCheckBox_5.Size = new System.Drawing.Size(110, 29);
+            this.TrueAnswerOptionCheckBox_5.Size = new System.Drawing.Size(134, 29);
             this.TrueAnswerOptionCheckBox_5.TabIndex = 44;
             this.TrueAnswerOptionCheckBox_5.Text = "True answer";
             this.TrueAnswerOptionCheckBox_5.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -618,10 +605,10 @@ namespace LEAP_v0_3
             // 
             this.TrueAnswerOptionCheckBox_6.AutoSize = true;
             this.TrueAnswerOptionCheckBox_6.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
-            this.TrueAnswerOptionCheckBox_6.Location = new System.Drawing.Point(1072, 397);
-            this.TrueAnswerOptionCheckBox_6.Margin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.TrueAnswerOptionCheckBox_6.Location = new System.Drawing.Point(1014, 487);
+            this.TrueAnswerOptionCheckBox_6.Margin = new System.Windows.Forms.Padding(3, 2, 0, 2);
             this.TrueAnswerOptionCheckBox_6.Name = "TrueAnswerOptionCheckBox_6";
-            this.TrueAnswerOptionCheckBox_6.Size = new System.Drawing.Size(110, 29);
+            this.TrueAnswerOptionCheckBox_6.Size = new System.Drawing.Size(134, 29);
             this.TrueAnswerOptionCheckBox_6.TabIndex = 45;
             this.TrueAnswerOptionCheckBox_6.Text = "True answer";
             this.TrueAnswerOptionCheckBox_6.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -632,10 +619,10 @@ namespace LEAP_v0_3
             // 
             this.TrueAnswerOptionCheckBox_7.AutoSize = true;
             this.TrueAnswerOptionCheckBox_7.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
-            this.TrueAnswerOptionCheckBox_7.Location = new System.Drawing.Point(1072, 446);
-            this.TrueAnswerOptionCheckBox_7.Margin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.TrueAnswerOptionCheckBox_7.Location = new System.Drawing.Point(1014, 547);
+            this.TrueAnswerOptionCheckBox_7.Margin = new System.Windows.Forms.Padding(3, 2, 0, 2);
             this.TrueAnswerOptionCheckBox_7.Name = "TrueAnswerOptionCheckBox_7";
-            this.TrueAnswerOptionCheckBox_7.Size = new System.Drawing.Size(110, 29);
+            this.TrueAnswerOptionCheckBox_7.Size = new System.Drawing.Size(134, 29);
             this.TrueAnswerOptionCheckBox_7.TabIndex = 46;
             this.TrueAnswerOptionCheckBox_7.Text = "True answer";
             this.TrueAnswerOptionCheckBox_7.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -646,10 +633,10 @@ namespace LEAP_v0_3
             // 
             this.TrueAnswerOptionCheckBox_8.AutoSize = true;
             this.TrueAnswerOptionCheckBox_8.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
-            this.TrueAnswerOptionCheckBox_8.Location = new System.Drawing.Point(1072, 495);
-            this.TrueAnswerOptionCheckBox_8.Margin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.TrueAnswerOptionCheckBox_8.Location = new System.Drawing.Point(1014, 607);
+            this.TrueAnswerOptionCheckBox_8.Margin = new System.Windows.Forms.Padding(3, 2, 0, 2);
             this.TrueAnswerOptionCheckBox_8.Name = "TrueAnswerOptionCheckBox_8";
-            this.TrueAnswerOptionCheckBox_8.Size = new System.Drawing.Size(110, 29);
+            this.TrueAnswerOptionCheckBox_8.Size = new System.Drawing.Size(134, 29);
             this.TrueAnswerOptionCheckBox_8.TabIndex = 47;
             this.TrueAnswerOptionCheckBox_8.Text = "True answer";
             this.TrueAnswerOptionCheckBox_8.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -660,10 +647,10 @@ namespace LEAP_v0_3
             // 
             this.TrueAnswerOptionCheckBox_9.AutoSize = true;
             this.TrueAnswerOptionCheckBox_9.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
-            this.TrueAnswerOptionCheckBox_9.Location = new System.Drawing.Point(1072, 544);
-            this.TrueAnswerOptionCheckBox_9.Margin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.TrueAnswerOptionCheckBox_9.Location = new System.Drawing.Point(1014, 667);
+            this.TrueAnswerOptionCheckBox_9.Margin = new System.Windows.Forms.Padding(3, 2, 0, 2);
             this.TrueAnswerOptionCheckBox_9.Name = "TrueAnswerOptionCheckBox_9";
-            this.TrueAnswerOptionCheckBox_9.Size = new System.Drawing.Size(110, 29);
+            this.TrueAnswerOptionCheckBox_9.Size = new System.Drawing.Size(134, 29);
             this.TrueAnswerOptionCheckBox_9.TabIndex = 48;
             this.TrueAnswerOptionCheckBox_9.Text = "True answer";
             this.TrueAnswerOptionCheckBox_9.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -674,10 +661,10 @@ namespace LEAP_v0_3
             // 
             this.TrueAnswerOptionCheckBox_10.AutoSize = true;
             this.TrueAnswerOptionCheckBox_10.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Bold);
-            this.TrueAnswerOptionCheckBox_10.Location = new System.Drawing.Point(1072, 593);
-            this.TrueAnswerOptionCheckBox_10.Margin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.TrueAnswerOptionCheckBox_10.Location = new System.Drawing.Point(1014, 727);
+            this.TrueAnswerOptionCheckBox_10.Margin = new System.Windows.Forms.Padding(3, 2, 0, 2);
             this.TrueAnswerOptionCheckBox_10.Name = "TrueAnswerOptionCheckBox_10";
-            this.TrueAnswerOptionCheckBox_10.Size = new System.Drawing.Size(110, 29);
+            this.TrueAnswerOptionCheckBox_10.Size = new System.Drawing.Size(134, 29);
             this.TrueAnswerOptionCheckBox_10.TabIndex = 50;
             this.TrueAnswerOptionCheckBox_10.Text = "True answer";
             this.TrueAnswerOptionCheckBox_10.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -687,17 +674,17 @@ namespace LEAP_v0_3
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 45F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.label14, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.PointValueRTB, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(190, 107);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(254, 131);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(878, 33);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(754, 42);
             this.tableLayoutPanel2.TabIndex = 51;
             // 
             // label14
@@ -706,10 +693,9 @@ namespace LEAP_v0_3
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label14.Font = new System.Drawing.Font("Gill Sans MT", 10F);
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label14.Location = new System.Drawing.Point(47, 0);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(63, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(829, 33);
+            this.label14.Size = new System.Drawing.Size(688, 42);
             this.label14.TabIndex = 52;
             this.label14.Text = "(automatically created)";
             // 
@@ -719,28 +705,28 @@ namespace LEAP_v0_3
             this.PointValueRTB.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.PointValueRTB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PointValueRTB.Font = new System.Drawing.Font("Gill Sans MT", 10F);
-            this.PointValueRTB.Location = new System.Drawing.Point(2, 2);
-            this.PointValueRTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PointValueRTB.Location = new System.Drawing.Point(3, 2);
+            this.PointValueRTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PointValueRTB.Name = "PointValueRTB";
             this.PointValueRTB.ReadOnly = true;
             this.PointValueRTB.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.PointValueRTB.Size = new System.Drawing.Size(41, 29);
+            this.PointValueRTB.Size = new System.Drawing.Size(54, 38);
             this.PointValueRTB.TabIndex = 12;
             this.PointValueRTB.Text = "";
             // 
             // MultipleChoiceTaskEditorWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.SlateGray;
-            this.ClientSize = new System.Drawing.Size(886, 612);
+            this.ClientSize = new System.Drawing.Size(1181, 753);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MaximumSize = new System.Drawing.Size(904, 659);
-            this.MinimumSize = new System.Drawing.Size(904, 659);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(1199, 800);
+            this.MinimumSize = new System.Drawing.Size(1199, 800);
             this.Name = "MultipleChoiceTaskEditorWindow";
             this.Text = "LEAP: Create multiple choice task";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MultipleChoiceTaskEditorWindow_FormClosing);
