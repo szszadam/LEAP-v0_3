@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace LEAP_v0_3
 {
-    /*ninth comment section*/
+    //      *****Essay Task class*****
+    //
+    // Descends from the “Task” class. It is used to store essay tasks.
+    //
+    //      ***Fields***
+    //      (beyond the fields of the "Task" class)
+    //
+    // _keywordsList: List<string> - a list for storing the student helping keywords belonging
+    // to the task.
+
     class EssayTask : Task
     {
         List<string> _keywordsList = new List<string>();
