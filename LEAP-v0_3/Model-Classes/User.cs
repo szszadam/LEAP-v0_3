@@ -6,6 +6,29 @@ using System.Threading.Tasks;
 
 namespace LEAP_v0_3
 {
+    //      *****User class*****
+    //
+    // A parent class for uniting users' data. The "Student", "Teacher" and "Administrator" classes
+    // also descend from this class.
+    //
+    //      ***Fields***
+    //
+    // _SQL_ID: int – it is used to store the primary key(ID/serial number) of the users
+    // stored in the SQL database.
+    //
+    // _familyName: string – It is used to store the user's last name. Maximum of 25 characters.
+    //
+    // _firstName: string – It is used to store the user's first name. Maximum of 25 characters.
+    //
+    // _userIdentificationNumber: string- It is used to store the user's identification number.
+    //
+    // _passwordHashCode: string – It is used to store hash code of the user's password
+    // which is encrypted by using SHA256 algorithm.
+    //
+    // _registrationTime: DateTime – It is used to store the user's registration time.
+    //
+    // _authorizationLevel: char – Used to store the user's authorization level.
+
     class User
     {
         /*third comment section*/
