@@ -6,6 +6,28 @@ using System.Threading.Tasks;
 
 namespace LEAP_v0_3
 {
+    //      *****Task class*****
+    //
+    //      ***Class description***
+    //
+    // It is the parent class of the essay task class and multiple-choice task class.
+    //
+    //      ***Fields***
+    //
+    // _SQL_ID: int – it is used to store the primary key(ID / sequence number) stored in the
+    // SQL database belonging to the task.
+    //
+    // _subject: string- it is used to store the name of the subject belonging to the assignment.
+    //
+    // _taskFormulation: string - it is used to store the formulation of
+    // the task / question belonging to the task.
+    //
+    // _taskType: string – it is used to store the type of task (essay or multiple-choice)
+    //
+    // _pointValue: int- it is used to store the maximum point value available for the task.
+    //
+    // _lockedTask: bool – it stores whether the task is locked or can still be modified
+
     public class Task
     {
         int _SQL_ID;
