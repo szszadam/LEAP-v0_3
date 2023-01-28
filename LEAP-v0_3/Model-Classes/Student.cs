@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace LEAP_v0_3
 {
-    // Student class
+    //      *****Student class*****
     //
-    //Description:
+    //      ***Description***
     //
     // Users with the student authorization level appear as objects of
     // this type when the program is running.Descendant of the User class. 
     //
-    // Fields:
-    // (beyond the fields of the "User" class)
+    //      *****Fields*****
+    //      (beyond the fields of the "User" class):
     //
     // _grade: int – it is used to store the student's grade.
+    //
     // _class: string – it is used to store the student's class.
 
     class Student : User

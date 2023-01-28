@@ -9,32 +9,67 @@ using System.Windows.Forms;
 
 namespace LEAP_v0_3
 {
-    // DB_Connection class
+    //      *****DB_Connection class*****
     //
-    // Class description:
+    //      ***Class description***
     //
     // This class is responsible for communicating with Microsoft SQL Server
     // and reading the records stored there when starting the program
     // and updating its display tables.
     //
-    // Fields:
+    //      ***Fields***
     //
     // DB_Path: string – Stores the path to the database file.
+    //
     // DB_Info: string – It contains the data required to connect to the SQL database.
-    // StudentList: List<Student> - A user with the "Student" authorization level read from the database appears as an object of type "Student" during runtime, and this list contains a collection of objects of this type.
-    // TeacherList: List<Teacher> - A user with the "Teacher" authorization level read from the database appears as an object of type "Teacher" during runtime, and this list contains a collection of objects of this type.
-    // AdministratorList: List<Administrator> - A user with the "Administrator" authorization level read from the database appears as an object of type "Administrator" during runtime, and this list contains a collection of objects of this type.
-    // MultipleChoiceTaskList: List<MultipleChoiceTask> - The „multiple-choice tasks” read from the database appear as "Multiple-Choice Task" objects during runtime, and this list contains a collection of objects of this type.
-    // EssayTaskList: List<EssayTask> - The „essay tasks” read from the database appear as "Essay Task" objects during runtime, and this list contains a collection of objects of this type.
-    // EditedTestSheetList: List<EditedTestSheet> - The „edited test sheets” read from the database appear as "Edited Test Sheet" objects during runtime, and this list contains a collection of objects of this type.
-    // IndividualTestSheetList: List<IndividualTestSheet> - The „individual test sheets” read from the database appear as "Individual Test Sheet" objects during runtime, and this list contains a collection of objects of this type.
+    // 
+    // StudentList: List<Student> - A user with the "Student" authorization level read from
+    // the database appears as an object of type "Student" during runtime, and this list contains
+    // a collection of objects of this type.
     //
-    // Methods:
+    // TeacherList: List<Teacher> - A user with the "Teacher" authorization level read from
+    // the database appears as an object of type "Teacher" during runtime, and this list contains
+    // a collection of objects of this type.
     //
-    // ReadUserDataFromDatabase() – Reading and classifying user data stored in the Users table of the database according to their authorization level.Then, with the help of this data, the objects of "Administrator", "Teacher" and "Student" are created and placed in the corresponding list (AdministratorList, TeacherList, StudentList).
-    // ReadTaskDataFromDatabase() – Reading and classifying the data of the tasks stored in the Tasks table of the database according to their type. Then, with the help of this data, the objects of the "Multiple-choice Task" and "Essay Task" types are created and placed in the corresponding list (MultipleChoiceTaskList, EssayTaskList).
-    // ReadEditedTestSheetDataFromDatabase() – Reading the data of test sheets stored in the Edited Tasks table of the database and placing them in a list called EditedTasksList as an object of type Edited Tasks.
-    // ReadIndividualTestSheetDataFromDatabase() – Reading the data of the individual test sheets stored in the Individual Test Sheets table of the database and set them in a list called IndividualTestSheetList as objects of type Individual Test Sheet.
+    // AdministratorList: List<Administrator> - A user with the "Administrator" authorization
+    // level read from the database appears as an object of type "Administrator" during runtime,
+    // and this list contains a collection of objects of this type.
+    //
+    // MultipleChoiceTaskList: List<MultipleChoiceTask> - The „multiple-choice tasks” read from
+    // the database appear as "Multiple-Choice Task" objects during runtime, and this list contains
+    // a collection of objects of this type.
+    //
+    // EssayTaskList: List<EssayTask> - The „essay tasks” read from the database appear as
+    // "Essay Task" objects during runtime, and this list contains a collection of objects of
+    // this type.
+    //
+    // EditedTestSheetList: List<EditedTestSheet> - The „edited test sheets” read from the database
+    // appear as "Edited Test Sheet" objects during runtime, and this list contains a collection of
+    // objects of this type.
+    //
+    // IndividualTestSheetList: List<IndividualTestSheet> - The „individual test sheets” read from
+    // the database appear as "Individual Test Sheet" objects during runtime, and this list contains
+    // a collection of objects of this type.
+    //
+    //      *****Methods*****
+    //
+    // ReadUserDataFromDatabase() – Reading and classifying user data stored in the Users table
+    // of the database according to their authorization level.Then, with the help of this data,
+    // the objects of "Administrator", "Teacher" and "Student" are created and placed in the
+    // corresponding list (AdministratorList, TeacherList, StudentList).
+    //
+    // ReadTaskDataFromDatabase() – Reading and classifying the data of the tasks stored in the
+    // Tasks table of the database according to their type. Then, with the help of this data,
+    // the objects of the "Multiple-choice Task" and "Essay Task" types are created and placed
+    // in the corresponding list (MultipleChoiceTaskList, EssayTaskList).
+    //
+    // ReadEditedTestSheetDataFromDatabase() – Reading the data of test sheets stored in the
+    // Edited Tasks table of the database and placing them in a list called EditedTasksList as
+    // an object of type Edited Tasks.
+    //
+    // ReadIndividualTestSheetDataFromDatabase() – Reading the data of the individual test
+    // sheets stored in the Individual Test Sheets table of the database and set them in a list
+    // called IndividualTestSheetList as objects of type Individual Test Sheet.
 
 
     static class DB_Connection
