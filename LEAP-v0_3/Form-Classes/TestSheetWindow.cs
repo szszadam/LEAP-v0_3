@@ -12,6 +12,103 @@ using System.Windows.Forms;
 
 namespace LEAP_v0_3
 {
+    //      *****Test Sheet Window class*****
+    //
+    //      ***Class description***
+    //
+    // The class for solving the individual test sheets, which is a descendant of the "Form"
+    // class and displays the essay and/or multiple-choice tasks in the embedded "FlowLayoutPanel"
+    // control.Other important elements of the graphic interface are the "Submit test sheet"
+    // button, the label displaying the data of the person filling out the worksheet, and the
+    // countdown timer that shows the remaining time available for completion.
+    //
+    //      ***Fields***
+    //
+    // CurrentIndividualTestSheet: IndividualTestSheet – It stores the reference of the individual
+    // test sheet displayed on the graphical interface.
+    //
+    // CurrentEditedTestSheet: EditedTestSheet - It stores the reference of the edited test sheet
+    // that serves as the archetype of the individual test sheet displayed on the graphical
+    // interface.
+    //
+    // timer: System.Windows.Forms.Timer – An object that stores the timing, the scheduling,
+    // and the tick time of the countdown timer.
+    //
+    // essayTaskAnswersString_Auxiliary: string – it is used to temporarily store the answers to
+    // the essay tasks on the individual test sheet for the time of uploading to the database.
+    // These answers will be stored in one text field in the database, using the “unit separator”
+    // character '▼'.
+    //
+    // multipleChoiceTaskAnswersString_Auxiliary: string - it is used to temporarily store the
+    // answers marked in the multiple-choice tasks on the individual test sheet, during the process
+    // of uploading to the database.These answers will be stored in one text field in the database,
+    // using the “unit” and “record” separator characters '▲' and '▼'. The “unit separator”
+    // character '▼' separates the multiple-choice tasks from each other, and the “record separator”
+    // character '▲' separates the answer marks within these tasks.When creating an individual
+    // test sheet, each answer mark takes the value "false".
+    //
+    // pointsEarnedString_Auxiliary: string - it is used to temporarily store the points achieved
+    // per task, during the process of uploading to the database.These earned points will be stored
+    // in one text field in the database, using the “unit separator” character '▼'.
+    //
+    // remainingTime: int – the time set on the edited test sheet that is available to complete
+    // the test sheet, here in seconds.After opening the individual test sheet this remaining
+    // time will always decrease by 1 unit per second due to the "Timer_tick()" event.
+    //
+    // stillGotTime: bool – shows whether there is still time available for solving the
+    // individual test sheet?
+    //
+    //      ***Methods and events***
+    //
+    // TestSheetWindow_Load() event – An event that raises when the test sheet window is opened,
+    // as a result of it, the FillTestSheetFlowLayoutPanel() and Countdown() methods are called,
+    // and the current date and time are entered into the “_testSheetStartTime” variable in the
+    // current instance of the "IndividualTestSheet" class. The name of the user solving the test
+    // sheet and the test sheet data itself(subject, topic) will be showed on the data label.
+    //
+    // FillTestSheetFlowLayoutPanel() – the method populates the "FlowLayoutPanel" control on
+    // the graphic interface with the elements of the task list of the edited test sheet providing
+    // the basis of the individual test sheet.
+    //
+    // SubmitTestSheetButton_Click() event – clicking the "Submit test sheet" button starts the
+    // closing process of the window, thus indirectly calling the TestSheetWindow_FormClosing()
+    // event.
+    //
+    // TestSheetWindow_FormClosing() event – When this event raises, the personal values are
+    // entered into the auxiliary variables belonging to the current individual test sheet.
+    // And after a user approval, these data are uploaded to the database, and then the window
+    // closes. This method calls the following methods while it is running:
+    // ConvertMultipleChoiceAnswersFromFlowLP_ToString(),
+    // ConvertEssayAnswersFromFlowLP_ToString(),
+    // IndividualTestSheet.FillAnswerMarkingsTableWithCustomValues(),
+    // IndividualTestSheet.AutomaticEvaluationOfMultipleChoiceTask(), 
+    // UploadDataToLEAP_DB(),
+    // ConvertEarnedPointsFromArrayToString(), 
+    // Program.ReadDataFromDatabase()
+    //
+    // ConvertMultipleChoiceAnswersFromFlowLP_ToString() - It links together the multiple-choice
+    // answer markings into one text in accordance with the formal requirements of the
+    // “multipleChoiceTaskAnswersString_Auxiliary” field (described above), to be uploaded into
+    // the database.
+    //
+    // ConvertEssayAnswersFromFlowLP_ToString() - It links together the essay task answers into
+    // one text in accordance with the formal requirements of the “essayTaskAnswersString_Auxiliary”
+    // field (described above), to be uploaded into the database.
+    //
+    // ConvertEarnedPointsFromArrayToString() - It links together the earned points into one text
+    // in accordance with the formal requirements of the “pointsEarnedString_Auxiliary” field
+    // (described above), to be uploaded into the database.
+    //
+    // UploadDataToLEAP_DB() – Uploading the data to the database, collected from the currently
+    // completed individual test sheet.
+    //
+    // Countdown() – start the countdown when the individual test sheet is opened. 
+    //
+    // Timer_tick() event - as a result of it, the remaining time will always decrease by 1 per
+    // second, and the new, reduced remaining time will be written in the header of the
+    // individual test sheet.
+
+
     public partial class TestSheetWindow : Form
     {
         IndividualTestSheet CurrentIndividualTestSheet;
