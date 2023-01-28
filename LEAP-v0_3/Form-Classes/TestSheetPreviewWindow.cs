@@ -13,11 +13,31 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace LEAP_v0_3
 {
-    // ****Test Sheet Preview class*****
+    //      *****Test Sheet Preview Window class*****
     //
-    // The class for opening the preview of tasks edited in the task editor, which is a
-    // descendant of the "Form" class. It is equally suitable for displaying essay and
-    // multiple-choice tasks.
+    //      ***Class description***
+    //
+    // A class for opening the preview of the test sheet created in the test sheet editor,
+    // which is a descendant of the "Form" class. The collected multiple-choice and essay
+    // tasks are showed in a similar way as the user will see in the case of solving the test
+    // sheet in the "Test Sheet Window". But there are some differences here: among the answer
+    // options for the multiple-choice questions, the correct answers will be colored green here,
+    // and here there is no countdown timer.
+    //
+    //      ***Fields***
+    //
+    // CurrentEditedTestSheet:EditedTestSheet – Stores a reference to the "Edited Test Sheet"
+    // object on which the preview window is based.
+    //
+    //      ***Methods and events***
+    //
+    // TestSheetWindow_Load() event - An event that raises when the test sheet preview window
+    // is opened, as a result of it, the FillTestSheetFlowLayoutPanel() method is called.
+    // The subject and the topic properties of the test sheet will be showed on the data label.
+    //
+    // FillTestSheetFlowLayoutPanel() – the method populates the "FlowLayoutPanel" control
+    // on the graphic interface with the elements of the task list of the edited test sheet.
+
 
     public partial class TestSheetPreviewWindow : Form
     {
