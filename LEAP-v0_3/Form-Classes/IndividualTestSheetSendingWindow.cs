@@ -12,6 +12,104 @@ using System.Windows.Forms;
 
 namespace LEAP_v0_3
 {
+    //      *****Individual Test Sheet Sending Window class*****
+    //
+    // The class for sending edited worksheets to users, which is a descendant of the "Form" class.
+    // The main elements appearing on its graphical interface are the "DataGridView" control
+    // for selecting the edited test sheet, the "DataGridView" control for selecting the targeted
+    // users, and the checkboxes in the rows of users.As well as the "Send test sheets" button,
+    // that finalizes the selections.
+    //
+    //     ***Fields***
+    //
+    // UserId: int - it is used to temporarily store the ID of selected users during the iteration
+    // process of uploading to the database.
+    //
+    // EditedTestSheetID: int - is used to temporarily store the ID of the selected edited test
+    // sheet during the iteration process of uploading to the database.
+    //
+    // PointsEarned: string – an auxiliary variable that is used to store the achieved points per
+    // task during the iteration process of uploading to the database.These earned points will be
+    // stored in one text field in the database, using the “unit separator” character '▼'.
+    // These earned points represent only 0-0-0... when creating the individual worksheet.
+    //
+    // Tasks: string - it is used to temporarily store the IDs of the tasks on the selected
+    // task sheet during the iteration process of uploading to the database.These IDs will be
+    // stored in one text field in the database, using the “unit separator” character '▼'.
+    //
+    // AnswerMarkingsTable: string - it is used to temporarily store the answer options marked in
+    // the multiple-choice tasks on the selected test sheet, during the iteration process of
+    // uploading to the database.These answers will be stored in one text field in the database,
+    // using the “unit” and “record” separator characters '▲' and '▼'. The “unit separator”
+    // character '▼' separates the multiple-choice tasks from each other, and the “record separator”
+    // character '▲' separates the answer marks within these tasks.When creating an individual
+    // test sheet, each answer mark takes the value "false".
+    //
+    // EssayAnswers: string - it is used to temporarily store the answers to the essay tasks on
+    // the selected test sheet during the iteration process of uploading to the database.These
+    // answers will be stored in a text field in the database, using the “unit separator”
+    // character '▼'. When creating an individual test sheet, there is only a " " (space) in place
+    // of the answers.
+    //
+    //      ***Methods and events***
+    //
+    // IndividualTestSheetSendingWindow_Load() – As a result of clicking on the "Send test sheets"
+    // button on the graphic interface, the FillUserSelectorDGV()
+    // and the FillEditedTestSheetSelectorDGV() methods will be are called.
+    //
+    // FillEditedTestSheetSelectorDGV() – It populates the "DataGridView" control listing the
+    // edited test sheets with data.The method uses some auxiliary variables while it is running.
+    // After populating the controller, it sorts the rows by the "subject" property in ABC order.
+    //
+    // FillUserSelectorDGV() - It populates the "DataGridView" control listing users with data.
+    // The method uses some auxiliary variables while it is running.Each line (representing
+    // one user) is supplemented with a check box, which allows you to select more users. At a
+    // certain point of its run, it calls another method called
+    // ConvertSubjectsTaughtFromListToString_Comma(). After uploading the controller,
+    // it sorts the rows by the "grade" property in descending order.
+    //
+    // SendTestSheetsButton_Click() event – As a result of clicking on the "Send test sheets" button,
+    // new rows are created in the database in the table called "IndividualTestSheets", using the
+    // appropriate data of the selected, edited test sheets and users.The method also uses
+    // additional, internal auxiliary fields during the iteration process of uploading to the
+    // database.Furthermore, the event also calls the following methods during its run:
+    // ConvertEarnedPointsFromListToString(), 
+    // LockEditedTestSheet(), 
+    // ConvertEssayAnswersFromListToString(),
+    // UploadDataToLEAP_DB(),
+    // EditedTestSheet.EditorTasksConvertFromListToString(),
+    // IndividualTestSheet.SetupAnswerMarkingsTableDimensions(),
+    // ConvertAnswerMarkingsFromArrayToString_False(),
+    // IndividualTestSheet.SetupKeywordFulfillmentTableDimensions(),
+    // ConvertKeywordFulfillmentFromArrayToString_False(), 
+    // Program.ReadDataFromDatabase()
+    //
+    // ConvertEarnedPointsFromListToString() – It links together the earned point values into a
+    // text, in accordance with the formal requirements of the PointsEarned field(for uploading
+    // to the database. Described above in the PointsEarned field paragraph).
+    //
+    // ConvertAnswerMarkingsFromArrayToString_False() - The multiple-choice answer markings are
+    // combined into one text in accordance with the formal requirements of the field named
+    // AnswerMarkingsTable(for uploading to the database. Described above in the AnswerMarkingsTable
+    // field paragraph), but here by default all answer markings are given the value "false" yet.
+    //
+    // ConvertEssayAnswersFromListToString() – It links together the answers to the essay tasks
+    // into one text in accordance with the formal requirements of the field called EssayAnswers
+    // (for uploading to the database. Described above in the EssayAnswers field paragraph)
+    //
+    // ConvertSubjectsTaughtFromListToString_Comma() – The teachers and administrators in the
+    // "DataGridView" control, which lists the users, links together the taught subjects into a
+    // comma-separated text.
+    //
+    // UploadDataToLEAP_DB() – Individual test sheet are created by selecting an edited test sheet
+    // and users and clicking the "Send test sheets" button.First it uploads the desired data into
+    // the database into the "IndividualTestSheets" table.After successful uploading, returning
+    // to the main window, the IndividualTestSheetList in the "DB_connection" class will be updated.
+    //
+    // LockEditedTestSheet() – When the individual test sheet is created as described above, this
+    // method locks the related edited test sheet (if it hasn't been done before). The method
+    // rewrites the lock value of the related edited test sheet to "true" in the SQL database.
+
     public partial class IndividualTestSheetSendingWindow : Form
     {
         int UserId;
