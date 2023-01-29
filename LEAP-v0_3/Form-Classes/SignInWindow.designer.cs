@@ -47,9 +47,9 @@ namespace LEAP_v0_3
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Gill Sans MT", 15F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(588, 12);
+            this.label1.Location = new System.Drawing.Point(537, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(461, 34);
+            this.label1.Size = new System.Drawing.Size(536, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome to the Lambda Exam Application!";
             // 
@@ -58,9 +58,9 @@ namespace LEAP_v0_3
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Gill Sans MT", 14F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(581, 77);
+            this.label2.Location = new System.Drawing.Point(537, 77);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(271, 34);
+            this.label2.Size = new System.Drawing.Size(328, 34);
             this.label2.TabIndex = 1;
             this.label2.Text = "User identification number:\r\n";
             // 
@@ -69,9 +69,9 @@ namespace LEAP_v0_3
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Gill Sans MT", 14F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(765, 143);
+            this.label3.Location = new System.Drawing.Point(736, 143);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 34);
+            this.label3.Size = new System.Drawing.Size(129, 34);
             this.label3.TabIndex = 2;
             this.label3.Text = "Password:";
             // 

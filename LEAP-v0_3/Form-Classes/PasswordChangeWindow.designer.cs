@@ -46,9 +46,9 @@ namespace LEAP_v0_3
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Gill Sans MT", 14F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(691, 25);
+            this.label2.Location = new System.Drawing.Point(656, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 34);
+            this.label2.Size = new System.Drawing.Size(176, 34);
             this.label2.TabIndex = 1;
             this.label2.Text = "Old password:";
             // 
@@ -57,9 +57,9 @@ namespace LEAP_v0_3
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Gill Sans MT", 14F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(713, 81);
+            this.label3.Location = new System.Drawing.Point(646, 81);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 34);
+            this.label3.Size = new System.Drawing.Size(186, 34);
             this.label3.TabIndex = 2;
             this.label3.Text = "New password:";
             // 
@@ -123,9 +123,9 @@ namespace LEAP_v0_3
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Gill Sans MT", 14F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(556, 137);
+            this.label4.Location = new System.Drawing.Point(550, 137);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(277, 34);
+            this.label4.Size = new System.Drawing.Size(282, 34);
             this.label4.TabIndex = 8;
             this.label4.Text = "Confirm new password:";
             // 
