@@ -1,0 +1,63 @@
+﻿-	IndividualTestSheets table
+		o	Id: int – ID number of the individual test sheet in the databse
+		o	UserId: int – ID number of the user to whom the individual test sheet belongs
+		o	EditedTestSheetID: int – ID number of the edited test sheet which forms the
+			basis of the individual test sheet
+		o	PointsEarned: nvarchar(MAX) – User’s earned points separated by the ’▼’ character
+		o	SentOutTestSheet: bit – Has the individual test sheet been sent to the student
+		o	SubmittedTestSheet: bit – Has the individual test sheet been solved and 
+			submitted by the student
+		o	CheckedTestSheet: bit –Is the individual test sheet checked / evaluated by
+			a teacher?
+		o	Tasks: nvarchar(MAX) – catalog of the tasks' ID , separated by the ’▼’ character:
+		o	AnswerMarkingsTable: nvarchar(MAX) – Student’s answer-markings to the 
+			multiple-choice type tasks, separated by the ’▼’  and ’▲’ characters.
+		o	EssayTaskAnswers: nvarchar(MAX) – Student’s answers to the essay type tasks,
+			separated by the ’▼’ character.
+		o	KeywordFulfillmentTable: nvarchar(MAX) – Fulfillment of the keywords for 
+			the essay type tasks, separated by the ’▼’  and ’▲’ characters.
+		o	TestSheetStartTime: char(22) – The date and time of the beginning of solving 
+			the individual test sheet
+		o	TestSheetSubmitTime: char(22) – The date and time of submission of the completed
+			individual test sheet
+
+
+-	Tasks table
+		o	Id: int – ID number of the task in the database
+		o	Subject: nvarchar(25) – Subject of the task
+		o	TaskType: nvarchar(25) – Type of the task
+		o	TaskFormulation: nvarchar(MAX) – Formulation of the task / question
+		o	PointValue: int – Point value available for the task
+		o	Attributes: nvarchar(MAX) – In case of essay task: keywords separated by the ’▼’  character. In case of multiple-choice task: answer option and its correctness separated by the ’▼’  and ’▲’ characters.
+		o	LockedTask: bit – Is the task locked or not?
+
+
+-	Users table
+		o	Id: int – User’s ID number in the database
+		o	FamilyName: nvarchar(40) – User’s family name
+		o	FirstName: nvarchar(40) – User’s first name
+		o	UserIdentificationNumber: varchar(10) – User’s alphanumeric identification number
+		o	AuthorizationLevel: char(1) – User’s authorization level
+		o	PasswordHashCode: varchar(64) – Hash code of the user’s password
+		o	SubjectsTaught: nvarchar(MAX) – Subjects taught by the user (teacher or admin), 
+			separated by the ’▼’ character
+		o	Grade: int – User’s grade (year)
+		o	Class: nvarchar(25) – User’s class
+		o	RegistrationTime: char(22) – User’s registration date and time
+
+
+-	EditedTestSheets table
+		o	Id: int – Editetd test sheet's ID number in the database
+		o	Subject: nvarchar(25) – subject of the edited test sheet
+		o	Topic: nvarchar(25) – topic of the edited test sheet
+		o	Grade: int – the grade targeted by the edited test sheet
+		o	TotalPointsAvailable: int – it is used to store the maximum achievable 
+			total score on the edited test sheet
+		o	Tasks: nvarchar(MAX) – catalog of the tasks' ID , separated by the ’▼’ character 
+		o	LockedTestSheet: bit – it shows whether the edited test sheet is locked
+		o	MultipleChoiceTruthTable: nvarchar(MAX) – the truth table belongs to the 
+			multiple-choice tasks, separated by the ’▼’ character: 
+		o	EssayKeywordTable: nvarchar(MAX) – The keywords' table belong to the essay tasks,
+			separated by the ’▼’ and ’▲’ characters: 
+		o	AvailableTime: int – the time available for solving the test sheet
+		o	CreationDate: char(22) – The date and time of creation of the edited test sheet

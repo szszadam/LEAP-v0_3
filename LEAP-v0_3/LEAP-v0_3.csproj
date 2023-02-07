@@ -367,6 +367,7 @@
     <None Include="Properties\App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Database\DatabaseDescription.txt" />
     <Content Include="Database\LEAP_DB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
