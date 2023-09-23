@@ -9,20 +9,27 @@ namespace LEAP_v0_3
 
     //      *****Multiple- Choice Task class*****
     //
+    //
     //      ***Class description***
     //
+    //
     // Descends from the “Task” class. It is used to store multiple-choice tasks.
+    //
     //
     //     ***Fields***
     //      (beyond the fields of the "Task" class)
     //
+    //
     // _answerOptionsList: List<AnswerOptions> - a collection of answer option structures
     // belonging to the task.
+    //
     //
     // AnswerOption: struct – an answer option structure consisting of the text of
     // the answer option and its correctness.
     //
+    //
     // _answerOptionText: string – it stores the text formulation of an answer option.
+    //
     //
     // _isThisAnswerCorrect: bool – it stores the predefined correctness of an answer option.
 
