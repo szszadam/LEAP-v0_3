@@ -8,33 +8,44 @@ namespace LEAP_v0_3
 {
     //      *****Edited Test Sheet class*****
     //
+    //
     // A class for storing the archetype of a test sheet created by a teacher or administrator.
     // Later on - among other things - the individual worksheet will be prepared also from
     // the data from the fields of this class (not through inheritance). 
     //
+    //
     //      ***Fields***
+    //
     //
     // _SQL_ID: int – it is used to store the primary key(ID/serial number) of the edited test sheet
     // stored in the SQL database.
     //
+    //
     // _subject: string – it is used to store the subject belonging to the edited worksheet.
     //
+    //
     // _topic: string - it is used to store the topic within the subject.
+    //
     //
     // _availableTime: int - it is used to store the time available for solving the edited worksheet.
     // The minute is the measurement unit of the value in it.
     //
+    //
     // _grade: int – it is used to store the grade targeted by the edited test sheet.
+    //
     //
     // _totalPointsAvailable: int – it is used to store the maximum achievable total score on
     // the edited test sheet.
     //
+    //
     // _lockedTestSheet: bool – it shows whether the edited test sheet is locked.
+    //
     //
     // _essayKeywordTable: string[][] - It is used to store keywords for essay questions that
     // help the student to write her/his answer. The first dimension itself represents the sequence
     // of explanatory tasks in the task list of the test sheet (and also on the display interface).
     // The second dimension represents the collection of keywords belonging to the given essay task.
+    //
     //
     // _multipleChoiceTruthTable: bool[][] - It is used to store the correct answer options
     // for multiple-choice questions. The first dimension itself represents the sequence of
@@ -42,7 +53,9 @@ namespace LEAP_v0_3
     // The second dimension represents and stores the correctness of the answer options for
     // the given multiple-choice task.
     //
+    //
     // _creationDate: DateTime – it stores date and time of the creation of the edited test sheet.
+    //
     //
     // _editorTaskList: List<Feladat> - the collection of tasks included in the edited test sheet.
 
