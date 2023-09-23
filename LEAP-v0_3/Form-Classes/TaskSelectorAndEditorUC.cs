@@ -14,38 +14,48 @@ namespace LEAP_v0_3
 {
     //      *****Task Selector and Editor User Control class*****
     //
+    //
     //      ***Class description*** 
+    //
     //
     // The interface used for editing tasks, which is a descendant of the "UserControl" class.
     // Its main graphic elements: the "DataGridView" control listing the tasks created so far,
     // the "Create multiple choice task" button, the "Create essay task" button, the "Preview
     // selected task" button, the "Refresh table" button and the "Delete selected task" button.
     //
-    //      ***Methods and events***
+    //
+    //      ***Methods and eventhandlers***
+    //
     //
     // FillTaskSelectorDGV() – It fills the "DataGridView" control listing the tasks with data.
     // The method uses some auxiliary variables while it is running.After populating the controller,
     // it sorts the rows by the "subject" property in ABC order.
     //
+    //
     // TestSheetCheckerSelectorUC_Load() event – When the Task Selector and Editor User Control
     // is loaded, it calls the FillTaskSelectorDGV() method.
     //
+    //
     // RefreshTableButton_Click_1() event – An event that runs when the "Refresh Table" button is
     // clicked, which calls the FillTaskSelectorDGV() method.
+    //
     //
     // CreateMultipleChoiceTaskButton_Click() event – the event that runs when the button "Create
     // multiple choice task" is clicked, which creates an instance of the
     // "MultipleChoiceTaskEditorWindow" class and opens it in a new dialog window.
     //
+    //
     // CreateEssayTaskButton_Click() event – the event that runs when the button "Create essay task"
     // is clicked, which creates an instance of the "EssayTaskEditorWindow" class and opens it in
     // a new dialog window.
+    //
     //
     // DeleteTaskButton_Click() – after a confirmation, the task selected in the "DataGridView"
     // control is deleted from the "Tasks" table of the database, if it is not yet locked.At the
     // end of its run, the method calls the following methods too:
     // Program.ReadDataFromDatabase(),
     // FillTaskSelectorDGV().
+    //
     //
     // PreviewTaskButton_Click() event – the event that runs when the button "Preview selected task"
     // is clicked creates an instance of the "TaskPreviewWindow" class by passing it the ID of the
