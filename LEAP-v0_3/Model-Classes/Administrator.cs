@@ -10,14 +10,18 @@ namespace LEAP_v0_3
     {
         //      *****Administrator class*****
         //
+        //
         //      ***Class description***
+        //
         //
         // Administrator level users appear as objects of this type when
         // the program is running.It is a descendant of the Teacher class and,
         // with it, of the User class.
         //
+        //
         //      ***Fields***
         //      (beyond the fields of the "User" class)
+        //
         //
         // _ subjectsTaughtList: List<string> - it is used to store the subjects taught
         // by the administrator.
