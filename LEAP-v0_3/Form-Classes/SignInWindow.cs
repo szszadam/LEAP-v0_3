@@ -13,15 +13,19 @@ namespace LEAP_v0_3
 {
     //      *****SignInWindow*****
     //
+    //
     // This is a class for identifying the user who wants to log in, which is the first
     // opening window when the program starts.It is a descendant of the "Form" class.
     // The main elements appearing on its graphical interface are the user ID field,
     // the password field, as well as the login and close buttons.
     //
-    //      ***Methods and events***
+    //
+    //      ***Methods and eventhandlers***
+    //
     //
     // OpenMainWindow() – Create an instance of the "MainWindow" class, run it and open
     // the Main window representing the main menu.
+    //
     //
     // SingInButton_Click() event – As a result of clicking on the "login" button,
     // the entered username is compared with the elements of both the Administrator list,
@@ -30,6 +34,7 @@ namespace LEAP_v0_3
     // this user is compared with the hash encrypted password typed by the user when logging in.
     // If a match is found, the user's entry is allowed and the OpenMainWindow() method is called.
     // In case of an incorrect username or password, an error message is received.
+    //
     //
     // CloseButton_Click() event – closing the login window and stopping the program.
 
