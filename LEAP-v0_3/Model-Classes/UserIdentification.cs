@@ -9,36 +9,45 @@ namespace LEAP_v0_3
 {
     //      *****User Identification class*****
     //
+    //
     // It stores the data of the user logged into the LEAP system.Furthermore,
     // its methods perform the generation of the identification number of newly registered users,
     // as well as the encryption of given passwords with a hash algorithm.
     //
+    //
     //      ***Fields***
+    //
     //
     // It is used to store a reference to a "user" type object containing the data of
     // the active user logged into the system.
     //
+    //
     //      ***Methods***
+    //
     //
     // UserIdentificationNumberGenerator() – When the administrator registers a new user
     // in the system, the new user will receive a user identification number with which he
     // will be able to log in to the system.Also, this identification number will also be
     // the user’s first password, which is need to be changed at the first login on the appropriate
     // interface. The generated user identification number consists of the following:
-    // 
+    //
+    //
     // First character: character representing the user's authorization level.
     // 'S' - Student, 'T' - Teacher, 'A' - Administrator
-
+    //
     // Second character: the initial letter of the user's last name.
     // If it is a special (accented) character, it will be replaced by the character in
     // the English ABC that forms the basis of the accented character.
-
+    //
     // Third character: the initial letter of the user's first name. If it is a special (accented)
     // character, it will be replaced by the character in the English ABC that forms the basis of
     // the accented character.
     // Then comes a hyphen separator which is followed by a sequence of the last four numeric
     // characters.This is the value of the user's SQL ID, padded with '0's from the left to give
     // a four-character sequence.
+    //
+    //
+    //
     //
     // hashPassword() – It encrypts the password passed to the method as a parameter
     // using the SHA-256 algorithm.
