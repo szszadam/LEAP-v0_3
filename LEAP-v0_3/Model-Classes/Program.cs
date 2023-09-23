@@ -11,11 +11,14 @@ namespace LEAP_v0_3
 {
     //      *****Program class*****
     //
+    //
     //      ***Methods***
+    //
     //
     // Main() – The program's entry point. Make settings for the further running of the program
     // and for the graphical display. It calls the ReadDataFromDatabase() method found inside
     // the class, and opens an instance of "SignInWindow" where the user’s interactions will begin.
+    //
     //
     // ReadDataFromDatabase() – Calling the methods found in the "DB_Connection" class for
     // reading data from the SQL database.
