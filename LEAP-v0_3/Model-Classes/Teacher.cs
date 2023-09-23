@@ -8,11 +8,14 @@ namespace LEAP_v0_3
 {
     //      *****Teacher class*****
     //
+    //
     // Users with the teacher authorization level appear as objects of this type when
     // the program is running.Teacher class is descendant of the “User” class.
     //
+    //
     //      ***Fields***
     //      (beyond the fields of the "User" class)
+    //
     //
     // _subjectsTaughtList: List<string> - it is used to store the subjects taught by the teacher.
 
