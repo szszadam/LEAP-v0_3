@@ -9,33 +9,45 @@ using System.Threading.Tasks;
 namespace LEAP_v0_3
 {
     //      *****IndividualTestSheet class*****
+    //
     //  
     //      ***Class description***
+    //
     //
     // It is used to store test sheets based on "edited test sheet" sent to users.
     // These individual test sheets are solved and returned by the students.
     //
+    //
     //       ***Fields***
+    //
     //
     // _SQL_ID_individualTestSheet: int- it is used to store the primary key(ID / sequence number)
     // stored in the SQL database belonging to the test sheets.
+    //
     //
     // _SQL_ID_editedTestSheet: int – it is used to store the primary key (ID / sequence number)
     // stored in the SQL database belonging to the edited test sheets on which the individual
     // test sheets are based.
     //
+    //
     // _SQL_ID_user: int - it is used to store the primary key(ID / sequence number)
     // stored in the SQL database belonging to the owner(user) of the individual test sheet.
     //
+    //
     // _testSheetStartTime: DateTime – It is used to store the start time of the test sheet.
+    //
     //
     // _testSheetSubmitTime: DateTime - It is used to store the submission time of the test sheet.
     //
+    //
     // _sentOutTestSheet: bool – has the test sheet already been sent out by a teacher or an administrator?
+    //
     //
     // _submittedTestSheet: bool – was the test sheet submitted by the user who solved it?
     //
+    //
     // _checkedTestSheet: bool- was the test sheet checked/evaluated by a teacher or an administrator?
+    //
     //
     // _answerMarkingsTable: bool[][] – The user's answers to the multiple-choice questions.
     // The first dimension itself represents the sequence of multiple-choice tasks in the task list
@@ -43,16 +55,21 @@ namespace LEAP_v0_3
     // the marking of the answer options for the given multiple-choice task and stores whether
     // the user considers the given answer option to be true or false.
     //
+    //
     // _pointsEarnedArray: int[] – It stores the points achieved by the user for the tasks
     // in the task list, according to the order of the task list.
+    //
     //
     // _individualTaskList: List<Feladat> - The list of the "Task" type objects, the building blocks
     // of the individual test sheet,.
     //
+    //
     // _essayTaskAnswers: List<string> - It stores the user's answers to the essay type tasks,
     // according to the order of the task list.
     //
+    //
     //      ***Methods***
+    //
     //
     // SetupAnswerMarkingsTableDimensions() – Used to set the value of the dimensions itself
     // of the _answerMarkingsTable field.Typically, the edited test sheet
@@ -62,6 +79,7 @@ namespace LEAP_v0_3
     // initial jagged array be created(by default only filled with "false" values) that has
     // the appropriate values of its dimensions.
     //
+    //
     // AutomaticEvaluationOfMultipleChoiceTask() – When the individual test sheet is submitted,
     // it is an automatic running method that immediately evaluates the answers to
     // the multiple-choice tasks.For a multiple-choice task, user can get a maximum of
@@ -70,14 +88,17 @@ namespace LEAP_v0_3
     // deducted.But in the worst case, we can get zero points for a multiple-choice task
     // (the final score for the task cannot be negative).
     //
+    //
     // FillIndividualTaskList() – Filling up the list of tasks, in which the reference of
     // the tasks of edited test sheet is stored.
+    //
     //
     // FillPointsEarnedArray() – reading the point values from the SQL database earned for
     // the tasks of the individual test sheet.These earned point values are stored in one field
     // in the database, so that the point values are separated from each other with the help of
     // the '▼' „unit separator” character.The method performs splitting along this character and
     // places the earned point values in the corresponding integer array.
+    //
     //
     // FillAnswerMarkingsTableWithCustomValues() - reading the answer data from the SQL database
     // for the multiple-choice tasks of the individual test sheet.These answer markings are stored
@@ -86,6 +107,7 @@ namespace LEAP_v0_3
     // are separated from each other by the '▼'  “unit separator” character.Along these characters,
     // the method performs the appropriate separation and places the resulting answer marks
     // in the appropriate logical, jagged array.
+    //
     //
     // FillEssayAnswersList() - reading the answer data from the SQL database for the essay tasks
     // of the individual test sheet. These multi-sentence answers are stored in one field in
