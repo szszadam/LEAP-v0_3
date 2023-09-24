@@ -8,9 +8,62 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.AxHost;
+using System.Collections.ObjectModel;
+using System.Runtime.InteropServices;
 
 namespace LEAP_v0_3
 {
+    //      *****Essay Task Checker User Control class*****
+    //
+    //
+    //      ***Class description***
+    //
+    //
+    // The class that implements the display of multiple-choice tasks on the checking and
+    // viewing interfaces of the worksheet, which is a descendant of the "UserControl"
+    // class.
+    // 
+    //
+    //      ***Fields***
+    //
+    //      
+    // _question: string – is used to store the formulation of the question / task.
+    //
+    // _keywords: List<string> - collection of keywords.
+    //
+    // _pointEarned: int – stores the user's score for the task.
+    //
+    // _answer: string – stores the answer to the essay task.
+    //
+    // _taskPointValue: int – is used to store the maximum point value available
+    // for the task.
+    //
+    //
+    //      ***Methods and event handlers***
+    //
+    //
+    // EssayTaskUC_Load () event handler - when the EssayTask user control is loaded, it
+    // calls the LoadKeywords() method and sets the height of the "ListBox" control that
+    // stores the keywords to the required size.
+    //
+    // LoadKeywords()- places the keywords into the "ListBox" control placed on the
+    // EssayTask control.
+    //
+    // EssayQuestionTextRTB_ContentsResized() event handler – sets the height of the
+    // "RichTextBox" control, which is used to display the formulation of the question /
+    // task statement, from a lower value to a higher one, if the length of the text
+    // requires it.
+    //
+    // EssayTaskPointsEarnedRTB_TextChanged() event handler - occurs when a new value is
+    // entered on the scoring interface by the user making corrections / scoring.If the
+    // user does not enter a numerical value between 0 (zero) and the maximum possible
+    // score, she/he will receive an error message.
+
+
+
+
     public partial class EssayTaskCheckerUC : UserControl
     {
         string _question;
