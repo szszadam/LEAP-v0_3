@@ -13,10 +13,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace LEAP_v0_3
 {
-    //      *****Test Sheet Preview Window class*****
+    //      ***** Test Sheet Preview Window class *****
     //
     //
-    //      ***Class description***
+    //      *** Class description ***
     //
     //
     // A class for opening the preview of the test sheet created in the test sheet editor,
@@ -27,17 +27,17 @@ namespace LEAP_v0_3
     // and here there is no countdown timer.
     //
     //
-    //      ***Fields***
+    //      *** Fields ***
     //
     //
     // CurrentEditedTestSheet:EditedTestSheet – Stores a reference to the "Edited Test Sheet"
     // object on which the preview window is based.
     //
     //
-    //      ***Methods and event handlers***
+    //      *** Methods and event handlers ***
     //
     //
-    // TestSheetWindow_Load() event - An event that raises when the test sheet preview window
+    // TestSheetWindow_Load() event handler - this method runs when the test sheet preview window
     // is opened, as a result of it, the FillTestSheetFlowLayoutPanel() method is called.
     // The subject and the topic properties of the test sheet will be showed on the data label.
     //
