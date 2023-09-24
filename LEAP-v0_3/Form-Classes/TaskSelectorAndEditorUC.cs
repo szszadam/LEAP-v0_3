@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace LEAP_v0_3
 {
-    //      *****Task Selector and Editor User Control class*****
+    //      ***** Task Selector and Editor User Control class *****
     //
     //
-    //      ***Class description*** 
+    //      *** Class description *** 
     //
     //
     // The interface used for editing tasks, which is a descendant of the "UserControl" class.
@@ -24,7 +24,7 @@ namespace LEAP_v0_3
     // selected task" button, the "Refresh table" button and the "Delete selected task" button.
     //
     //
-    //      ***Methods and eventhandlers***
+    //      *** Methods and event handlers ***
     //
     //
     // FillTaskSelectorDGV() – It fills the "DataGridView" control listing the tasks with data.
@@ -32,20 +32,20 @@ namespace LEAP_v0_3
     // it sorts the rows by the "subject" property in ABC order.
     //
     //
-    // TestSheetCheckerSelectorUC_Load() event – When the Task Selector and Editor User Control
+    // TestSheetCheckerSelectorUC_Load() event handler – When the Task Selector and Editor User Control
     // is loaded, it calls the FillTaskSelectorDGV() method.
     //
     //
-    // RefreshTableButton_Click_1() event – An event that runs when the "Refresh Table" button is
+    // RefreshTableButton_Click_1() event handler – this method runs when the "Refresh Table" button is
     // clicked, which calls the FillTaskSelectorDGV() method.
     //
     //
-    // CreateMultipleChoiceTaskButton_Click() event – the event that runs when the button "Create
+    // CreateMultipleChoiceTaskButton_Click() event handler – this method runs when the button "Create
     // multiple choice task" is clicked, which creates an instance of the
     // "MultipleChoiceTaskEditorWindow" class and opens it in a new dialog window.
     //
     //
-    // CreateEssayTaskButton_Click() event – the event that runs when the button "Create essay task"
+    // CreateEssayTaskButton_Click() event handler – this method runs when the button "Create essay task"
     // is clicked, which creates an instance of the "EssayTaskEditorWindow" class and opens it in
     // a new dialog window.
     //
@@ -57,7 +57,7 @@ namespace LEAP_v0_3
     // FillTaskSelectorDGV().
     //
     //
-    // PreviewTaskButton_Click() event – the event that runs when the button "Preview selected task"
+    // PreviewTaskButton_Click() event handler – this method runs when the button "Preview selected task"
     // is clicked creates an instance of the "TaskPreviewWindow" class by passing it the ID of the
     // selected task and opens it in a new dialog.
 
