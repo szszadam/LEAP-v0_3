@@ -8,9 +8,48 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.AxHost;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
+using System.Runtime.InteropServices;
 
 namespace LEAP_v0_3
 {
+    //      ***** Essay Task User Control class *****
+    //
+    //
+    //      *** Class description***
+    //
+    // This class implements the display of essay tasks on the test sheet filling
+    // interfaces, which is a descendant of the "UserControl" class.
+    //
+    //
+    //      *** Fields ***
+    //
+    //
+    // _question: string –is used to store the formulation of the question / task.
+    //
+    //
+    // _keywords: List<string> - is the collection of keywords.
+    //
+    //
+    //      *** Methods and event handlers ***
+    //
+    //
+    // EssayTaskUC_Load() event handler - when the EssayTaskUC control is loaded, it calls
+    // the LoadKeywords() method and sets the height of the "ListBox" control that stores
+    // the keywords to the required size.
+    //
+    //
+    // LoadKeywords() - places the keywords into the "ListBox" control placed on the
+    // EssayTaskUC control.
+    //
+    //
+    // EssayQuestionTextRTB_ContentsResized() event handler - the height of the "RichTextBox" control
+    // used to display the text of the question / task formulation is set to a higher value, if the
+    // length of the text requires it.
+
+
     public partial class EssayTaskUC : UserControl
     {
         string _question;
