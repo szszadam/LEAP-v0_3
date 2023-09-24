@@ -15,10 +15,10 @@ using System.Runtime.InteropServices;
 
 namespace LEAP_v0_3
 {
-    //      *****Essay Task Checker User Control class*****
+    //      ***** Essay Task Checker User Control class *****
     //
     //
-    //      ***Class description***
+    //      *** Class description ***
     //
     //
     // The class that implements the display of multiple-choice tasks on the checking and
@@ -26,7 +26,7 @@ namespace LEAP_v0_3
     // class.
     // 
     //
-    //      ***Fields***
+    //      *** Fields ***
     //
     //      
     // _question: string – is used to store the formulation of the question / task.
@@ -51,12 +51,12 @@ namespace LEAP_v0_3
     // LoadKeywords()- places the keywords into the "ListBox" control placed on the
     // EssayTask control.
     //
-    // EssayQuestionTextRTB_ContentsResized() event handler – sets the height of the
+    // EssayQuestionTextRTB_ContentsResized() event handler – this method sets the height of the
     // "RichTextBox" control, which is used to display the formulation of the question /
     // task statement, from a lower value to a higher one, if the length of the text
     // requires it.
     //
-    // EssayTaskPointsEarnedRTB_TextChanged() event handler - occurs when a new value is
+    // EssayTaskPointsEarnedRTB_TextChanged() event handler - this method runs when a new value is
     // entered on the scoring interface by the user making corrections / scoring.If the
     // user does not enter a numerical value between 0 (zero) and the maximum possible
     // score, she/he will receive an error message.
