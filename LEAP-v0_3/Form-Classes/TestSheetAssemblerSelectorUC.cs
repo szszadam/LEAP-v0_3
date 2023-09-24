@@ -1,17 +1,75 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Xml.Linq;
 namespace LEAP_v0_3
 {
+    //      ***** Test Sheet Assembler Selector User Control Class *****
+    //
+    //
+    //      *** Class description ***
+    //
+    //
+    // This graphic interface is a descendant of the "UserControl" class an it is used for editing
+    // worksheets.Its main graphic elements are: the "DataGridView" control listing the edited test
+    // sheets created so far, the " Create a new edited test sheet" " button, the "Modify selected
+    // test sheet" button, the "Preview selected test sheet" button, the "Refresh table" button and
+    // the "Delete selected test sheet" button.
+    //
+    //
+    //      *** Methods and event handlers ***
+    //
+    //
+    // TestSheetAssemblerSelectorUC_Load () event handler - when the Test Sheet Assembler Selector
+    // User Control is loaded, it calls the FillEditedTestSheetSelectorDGV() method.
+    //
+    //
+    // FillEditedTestSheetSelectorDGV() – It fills the "DataGridView" control listing the edited test
+    // sheets with data. This method uses some auxiliary variables during execution. After filling up
+    // the controller, it sorts its rows by the "subject" property in ABC order.
+    //
+    //
+    // RefreshTableButton_Click_1() event handler –  this method is executed when the "Refresh Table"
+    // button is clicked, which calls the FillEditedTestSheetSelectorDGV() method.
+    //
+    //
+    // CreateNewTestSheetButton_Click () event handler – this method is executed when the user clicks
+    // on the "Create new edited test sheet" button, which creates an instance of the
+    // "TestSheetAssemblerWindow" class and opens it in a new dialog window.
+    //
+    //
+    // ModifyTestSheetButton_Click() event handler – by clicking the "Modify selected test sheet"
+    // button, user can do further modification on the selected, not yet locked, edited test sheet.
+    // If the test sheet is already locked, the user will receive an error message.
+    //
+    //
+    // PreviewTestSheetButton_Click() event handler - this method is executed when the "Preview
+    // selected test sheet" button is clicked, which creates an instance of the
+    // "TestSheetViewerWindow" class, and passing it the ID of the selected test sheet, then opens it
+    // in a new dialog.
+    //
+    //
+    // DeleteTestSheetButton_Click() event handler - after a user’s approval, the selected test sheet
+    // will be deleted from the "Edited Test Sheets" table of the database, provided that it is not
+    // yet locked. At the end of this method it also calls the following methods:
+    // Program.ReadDataFromDatabase(), FillEditedTestSheetSelectorDGV().
+
     public partial class TestSheetAssemblerSelectorUC : UserControl
     {
         public TestSheetAssemblerSelectorUC()
