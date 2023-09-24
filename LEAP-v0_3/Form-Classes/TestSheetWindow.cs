@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace LEAP_v0_3
 {
-    //      *****Test Sheet Window class*****
+    //      ***** Test Sheet Window class *****
     //
     //
-    //      ***Class description***
+    //      *** Class description ***
     //
     //
     // The class for solving the individual test sheets, which is a descendant of the "Form"
@@ -25,7 +25,8 @@ namespace LEAP_v0_3
     // countdown timer that shows the remaining time available for completion.
     //
     //
-    //      ***Fields***
+    //      *** Fields ***
+    //
     //
     // CurrentIndividualTestSheet: IndividualTestSheet – It stores the reference of the individual
     // test sheet displayed on the graphical interface.
@@ -62,7 +63,7 @@ namespace LEAP_v0_3
     //
     // remainingTime: int – the time set on the edited test sheet that is available to complete
     // the test sheet, here in seconds.After opening the individual test sheet this remaining
-    // time will always decrease by 1 unit per second due to the "Timer_tick()" event.
+    // time will always decrease by 1 unit per second due to the "Timer_tick()" event handler.
     //
     //
     // stillGotTime: bool – shows whether there is still time available for solving the
@@ -72,7 +73,7 @@ namespace LEAP_v0_3
     //      ***Methods and event handlers***
     //
     //
-    // TestSheetWindow_Load() event – An event that raises when the test sheet window is opened,
+    // TestSheetWindow_Load() event handler – this method runs when the test sheet window is opened,
     // as a result of it, the FillTestSheetFlowLayoutPanel() and Countdown() methods are called,
     // and the current date and time are entered into the “_testSheetStartTime” variable in the
     // current instance of the "IndividualTestSheet" class. The name of the user solving the test
@@ -84,12 +85,12 @@ namespace LEAP_v0_3
     // the basis of the individual test sheet.
     //
     //
-    // SubmitTestSheetButton_Click() event – clicking the "Submit test sheet" button starts the
+    // SubmitTestSheetButton_Click() event handler – clicking on the "Submit test sheet" button starts the
     // closing process of the window, thus indirectly calling the TestSheetWindow_FormClosing()
     // event.
     //
     //
-    // TestSheetWindow_FormClosing() event – When this event raises, the personal values are
+    // TestSheetWindow_FormClosing() event handler – When this method is running, the personal values are
     // entered into the auxiliary variables belonging to the current individual test sheet.
     // And after a user approval, these data are uploaded to the database, and then the window
     // closes. This method calls the following methods while it is running:
@@ -127,7 +128,7 @@ namespace LEAP_v0_3
     // Countdown() – start the countdown when the individual test sheet is opened. 
     //
     //
-    // Timer_tick() event - as a result of it, the remaining time will always decrease by 1 per
+    // Timer_tick() event handler - as a result of it, the remaining time will always decrease by 1 per
     // second, and the new, reduced remaining time will be written in the header of the
     // individual test sheet.
 
