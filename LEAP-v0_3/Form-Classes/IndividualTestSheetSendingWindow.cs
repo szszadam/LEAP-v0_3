@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace LEAP_v0_3
 {
-    //      *****Individual Test Sheet Sending Window class*****
+    //      ***** Individual Test Sheet Sending Window class *****
     //
     //
     // The class for sending edited worksheets to users, which is a descendant of the "Form" class.
@@ -21,7 +21,7 @@ namespace LEAP_v0_3
     // users, and the checkboxes in the rows of users.As well as the "Send test sheets" button,
     // that finalizes the selections.
     //
-    //     ***Fields***
+    //     *** Fields ***
     //
     // UserId: int - it is used to temporarily store the ID of selected users during the iteration
     // process of uploading to the database.
@@ -58,7 +58,7 @@ namespace LEAP_v0_3
     // of the answers.
     //
     //
-    //      ***Methods and eventhandlers***
+    //      *** Methods and event handlers ***
     //
     //
     // IndividualTestSheetSendingWindow_Load() – As a result of clicking on the "Send test sheets"
@@ -79,7 +79,7 @@ namespace LEAP_v0_3
     // it sorts the rows by the "grade" property in descending order.
     //
     //
-    // SendTestSheetsButton_Click() event – As a result of clicking on the "Send test sheets" button,
+    // SendTestSheetsButton_Click() event handler – As a result of clicking on the "Send test sheets" button,
     // new rows are created in the database in the table called "IndividualTestSheets", using the
     // appropriate data of the selected, edited test sheets and users.The method also uses
     // additional, internal auxiliary fields during the iteration process of uploading to the
