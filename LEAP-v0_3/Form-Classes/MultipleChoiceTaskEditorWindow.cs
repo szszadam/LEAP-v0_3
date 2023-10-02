@@ -12,6 +12,77 @@ using System.Windows.Forms;
 
 namespace LEAP_v0_3
 {
+    //      ***** Multiple Choice Task Editor Window Class *****
+    //
+    //
+    //      *** Class description ***
+    //
+    //
+    // This class provides the interface where the teacher or administrator can edit a new multiple-choice
+    // task.The class is a descendant of the "Form" class and the following main elements can be found on its
+    // graphical interface: subject selection "ComboBox", task formulation "RichTextBox", point value
+    // "RichTextBox", further 10 "RichTextBoxes" for entering answer option texts.There are also the
+    // corresponding "CheckBox" elements, in which the user can indicate the correctness of the
+    // answer option, and lastly the "Create multiple choice task" button.
+    //
+    //
+    //      *** Fields ***
+    //
+    //
+    // answerOptionsStringRow_Auxiliary: string - when editing a multiple-choice task, it stores the answer
+    // options and their correctnesses during uploading to the database.These answer options and their
+    // correctnesses ("true" or "false") will be stored in a simple text field in the LEAP database, using
+    // the separator characters '▲' and '▼'. The “record separator” character '▲' separates pairs of answers-
+    // option+correctness from other such pairs.The “unit separator” '▼' character separates this answer
+    // option and its boolean value indicating its correctness within this pair.
+    //
+    //
+    // UserSubjectsTaughtAuxiliary: List<string> - the collection of subjects taught by the teacher or
+    // administrator editing the task.In terms of subject matter, only such types of tasks can be created as
+    // the subject taught by the active user.
+    //
+    //
+    // pointValueAuxiliary: hint – it stores the point value of the task, which is automatically generated.
+    // The task will be worth as many points as many is the number of correct answer options.
+    //
+    //
+    //      *** Methods and event handlers ***
+    //
+    //
+    // ConvertAnswerOptionFromRTB_ToString () - For the process of uploading to the LEAP database, the
+    // multiple choice answer markings and the indication of their correctness are combined into one text
+    // according to the formal requirements of the field called "answerOptionsStringRow_Auxiliary" (described
+    // above).
+    //
+    //
+    // PointValueCalculation() – This method counts the number of answer options indicated as correct.This
+    // value will be the maximum reachable point value of the task.
+    //
+    //
+    // CreateTaskButton_Click() event handler –  Clicking on the "Create multiple choice task" button starts
+    // the closing process of the window, thus indirectly calling the
+    // MultipleChoiceTaskEditorWindow_FormClosing () method.
+    //
+    //
+    // MultipleChoiceTaskEditorWindow_FormClosing() event handler – During running this method, each answer
+    // option text fields are checked to see if it has any meaningful content, and whether the given answer
+    // option has been marked as correct.After a user approval, these data are uploaded together with the
+    // text of the question, the text of the subject and the point value to the LEAP database.Then the window
+    // closes. This method also calls the following methods during runtime:
+    // Program.ReadDataFromDatabase(),
+    // ConvertAnswerOptionFromRTB_ToString(),
+    // UploadDataToLEAP_DB()
+    //
+    //
+    //
+    // UploadDataToLEAP_DB() – This method uploads the data of the prepared multiple choice task to the LEAP
+    // database.
+    //
+    //
+    // TrueAnswerOptionCheckBox_*** _CheckedChanged() event handlers –  The status-changes of the
+    // "CheckBoxes" indicating the possible correctness of the answer option are monitored, and if a change
+    // occurres, the PointValueCalculation() method is called (again).
+
     public partial class MultipleChoiceTaskEditorWindow : Form
     {
         string answerOptionsStringRow_Auxiliary;
