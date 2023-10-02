@@ -13,6 +13,87 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace LEAP_v0_3
 {
+
+
+    //      ***** Test Sheet Checker Window Class *****
+    //
+    //
+    //      *** Class description ***
+    //
+    //
+    // A class is a descendant of the "Form" class and created for reviewing and manual scoring and
+    // correcting(in the case of essay tasks) the test sheets filled and submitted by users.It displays essay
+    // and/or multiple-choice tasks in its embedded "FlowLayoutPanel" control.Other important elements of its
+    // graphical interface are the "Submit checked test sheet" button and the upper label displaying the data
+    // of the person solving the test sheet.
+    //
+    //
+    //      *** Fields ***
+    //
+    //
+    // CurrentIndividualTestSheet: IndividualTestSheet – this variable if for storing a reference to the
+    // individual test sheet to be checked / to be scored.
+    //
+    //
+    // CurrentEditedTestSheet: EditedTestSheet - this variable is for storing a reference to the edited test
+    // sheet that served as the basis for the individual test sheet to be checked / scored.
+    //
+    //
+    // pointsEarnedString_Auxiliary: string - it is used to store the points achieved per task during
+    // uploading to the LEAP database. These received points will be stored in a text field in the database,
+    // using the separator character '▼'. When the individual test sheet is submitted, these points could
+    // already have a value other than 0 for the multiple-choice tasks, when the algorithm for the automatic
+    // evaluation of the multiple-choice tasks is running.The point values for the essay answers are entered
+    // manually by the user correcting the worksheet.
+    //
+    //
+    // familyName: string – auxiliary variable that stores the last name of the user filling out the
+    // individual test sheet.
+    //
+    //
+    // firstName: string – auxiliary variable that stores the first name of the user filling out the
+    // individual test sheet.
+    //
+    //
+    //      *** Methods and event handlers ***
+    //
+    //
+    // TestSheetCheckerWindow_Load() event handler – This method runs when the test sheet checking window is
+    // opened, which causes the FillTestSheetFlowLayoutPanel() method to be called.Furthermore the name of
+    // the user filling out the test sheet and the test sheet data (subject, topic) are written on the data
+    // label.
+    //
+    //
+    // FillTestSheetFlowLayoutPanel() – the method fills the "FlowLayoutPanel" control placed on the graphic
+    // interface with the elements of the task list of the edited test sheet(that forms the basis of the
+    // individual test sheet).
+    //
+    //
+    // SubmitCheckedTestSheetButton_Click() event handler – clicking on the button "Submit checked test
+    // sheet" starts the process of closing the current window, thus indirectly calling the
+    // TestSheetWindow_FormClosing() method.
+    //
+    //
+    // TestSheetWindow_FormClosing() event handler –  when this method is running, the points assigned to the
+    // essay tasks by the user correcting the task will be also entered into the auxiliary variable
+    // "pointsEarnedString_Auxiliary" belonging to the current individual test sheet. After a user approval,
+    // these data are uploaded to the LEAP database, and then the window closes. The method also calls the
+    // following methods during it’s runtime:
+    // Program.ReadDataFromDatabase(),
+    // ConvertEarnedPointsFromArrayToString(),
+    // UploadDataToLEAP_DB().
+    //
+    //
+    // ConvertEarnedPointsFromArrayToString() -   It concatenates the achieved points to be uploaded to the
+    // database into a text in accordance with the formal requirements of the pointsEarnedString_Auxiliary
+    // field (described above).
+    //
+    //
+    // UploadDataToLEAP_DB() – this method uploads to the LEAP database the collection of achieved points as
+    // a result of the manual checking / scoring process. In addition, the new "true" value of the
+    // "CheckedTestSheet" field is also uploaded.
+
+
     public partial class TestSheetCheckerWindow : Form
     {
         IndividualTestSheet CurrentIndividualTestSheet;
