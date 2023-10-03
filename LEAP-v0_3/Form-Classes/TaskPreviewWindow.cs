@@ -12,7 +12,11 @@ using System.Windows.Forms;
 
 namespace LEAP_v0_3
 {
-    // ****Test Sheet Preview class*****
+    //      ***** Task Preview Window Class *****
+    //
+    //
+    //      *** Class description ***
+    //
     //
     // The class for opening the preview of tasks edited in the task editor, which is a
     // descendant of the "Form" class. It is equally suitable for displaying essay and
