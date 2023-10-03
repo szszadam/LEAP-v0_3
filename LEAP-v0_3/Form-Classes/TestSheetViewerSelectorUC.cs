@@ -11,6 +11,39 @@ using System.Windows.Forms;
 
 namespace LEAP_v0_3
 {
+    //      ***** Test Sheet Viewer Selector User Control Class *****
+    //
+    //
+    //      *** Class description ***
+    //
+    //
+    // This class is a descendant of the "UserControl" class, and it provides the selection of individual
+    // test sheets checked / scored by the teacher.The main elements of its graphical interface are : the
+    // "DataGridView" control for selecting the desired checked individual test sheet, the "View selected
+    // test sheet" button, and the “Refresh table" button.
+    //
+    //
+    //      *** Methods and event handlers ***
+    //
+    //
+    // FillTestSheetSelectorDGV() – It fills the "DataGridView" listing the individual test sheets with
+    // data.The method uses some auxiliary variables while it is running.
+    //
+    //
+    // TestSheetCheckerSelectorUC_Load() event handler – When the Test Sheet Viewer Selector User Control
+    // is loaded, it calls the FillTestSheetSelectorDGV() method.
+    //
+    //
+    // SelectTestSheetButton_Click() event handler - this method runs when the "View selected test sheet"
+    // button is clicked, and it creates an instance of the "TestSheetViewerWindow" class and opens it in a
+    // new window.
+    //
+    //
+    // RefreshTableButton_Click() event handler - this method runs when the "Refresh table" button is
+    // clicked, which calls the FillTestSheetSelectorDGV() method.
+
+
+
     public partial class TestSheetViewerSelectorUC : UserControl
     {
         public TestSheetViewerSelectorUC()
