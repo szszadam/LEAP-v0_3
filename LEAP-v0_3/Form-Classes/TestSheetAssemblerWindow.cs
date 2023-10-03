@@ -12,6 +12,101 @@ using System.Windows.Forms;
 
 namespace LEAP_v0_3
 {
+    //      ***** Test Sheet Assembler Window Class *****
+    //
+    //
+    //      *** Class description ***
+    //
+    //
+    // This class is a descendant of the "Form" class and it is used for compiling edited test sheets.With
+    // its help, user can put the essay and multiple-choice tasks which are created so far into a test sheet
+    // prototype, the "edited test sheet". This „edited test sheet” will serve as a basis for creating
+    // „individual test sheets” later.On the graphical interface, it is not only possible to sort the tasks,
+    // but also to preview  the entire test sheet.
+    //
+    // The main elements of the graphical interface: "DataGridView" controller for selecting tasks with a
+    // check box, a drop-down list for entering the subject, a text field for entering the topic, numeric
+    // fields for entering the year and  a numeric field for entering the time available for completion.And
+    // finally, at the bottom of the window theres is the "FlowLayoutPanel" control, which provides the
+    // preview display.
+    //
+    //
+    //      *** Fields ***
+    //
+    //
+    // editorTasksIdArray_Auxiliary: int[] - array for storing the IDs of the tasks on the edited test sheet.
+    //
+    //
+    // UserSubjectsTaughtAuxiliary: List<string> - the list of subjects taught by the teacher or
+    // administrator who created the edited test sheet.
+    //
+    //
+    //      *** Methods and event handlers ***
+    //
+    //
+    // TestSheetAssemblerWindow_Load() event handler - When the Test Sheet Assembler Window is loaded, it
+    // calls the FillTaskSelectorDGV() method.
+    //
+    //
+    // FillTaskSelectorDGV() - It fills the "DataGridView" control listing the edited test sheets with data.
+    // The method uses some auxiliary variables during runtime.
+    //
+    //
+    // UpdateTestSheetPreviewButton_Click() event handler – By clicking on the “Refresh preview of test
+    // sheet” button, the selected tasks (selected in the "DataGridView" by the check boxes)  become viewable
+    // by the editor.The appearance is exactly in the same form as those tasks will appear on the individual
+    // test sheet for the students.
+    //
+    //
+    // CreateTestSheetButton_Click() event handler - clicking on the "Create Test Sheet" button starts the
+    // process of closing the current window, thus indirectly calls the TestSheetAssemblerWindow_FormClosig()
+    // event handler.
+    //
+    //
+    // TestSheetAssemblerWindow_FormClosing() event handler - After the user’s approval, the data of the
+    // assembled „edited test sheet" is uploaded to the database, and then the window closes.
+    // The method also calls the following methods while it is running:
+    // Program.ReadDataFromDatabase(),
+    // UploadDataToLEAP_DB().
+    //
+    //
+    // UploadDataToLEAP_DB() – This method uploads the data of the assembled „edited test sheet” to the
+    // database. The method uses several auxiliary variables and calls the following methods
+    // during its runtime:
+    // EditedTestSheet.EditorTasksConvertFromListToString(), 
+    // TaskLocking(), 
+    // EditedTestSheet.FillMultipleChoiceTruthTable(), 
+    // ConvertTruthTableFromArrayToString(), 
+    // EditedTestSheet.FillEssayKeywordTable(), 
+    // ConvertKeywordTableFromArrayToString().
+    //
+    //
+    // TaskLocking() – This method locks the tasks in the current edited test sheet. This is necessary, when
+    // these tasks are included in one or more completed edited test sheets, so their further editing and
+    // deletion are no longer allowed.
+    //
+    //
+    // ConvertKeywordTableFromArrayToString() - During the process of uploading data to LEAP database, this
+    // method concatenates the essay tasks’ keywords of the test sheet, into one text, using the “record” and
+    // “unit” separator characters('▲' and '▼'). The “record separator” character '▲' separates the group of
+    // keywords belonging to one task from the other essay tasks’ keywords.The “unit separator” character
+    // '▼' separates the keywords from each other within one task.All this because the data will be stored in
+    // a text field in the LEAP database.
+    //
+    //
+    // ConvertTruthTableFromArrayToString() - During the process of uploading data to LEAP database, this
+    // method concatenates the multiple-choice tasks’ denoted answer-option-correctnesses of the test sheet,
+    // into one text, using the “record” and “unit” separator characters('▲' and '▼'). The character '▲'
+    // separates theanswer-option-correctness group belonging to one task from the other multiple-choice
+    // tasks.The '▼' character separates the answer-options-correctnesses ("true" and "false") within one
+    // task.All this because the data will be stored in a text field in the LEAP database.
+    //
+    //
+    // SelectingTaskDGV_Click() event handler – This method runs after clicking on any element in the task
+    // selector “DataGridView”. This action causes the sorting of the list, so that the already selected
+    // tasks will be moved at the top of the list.
+
+
     public partial class TestSheetAssemblerWindow : Form
     {
         int[] editorTasksIdArray_Auxiliary;
