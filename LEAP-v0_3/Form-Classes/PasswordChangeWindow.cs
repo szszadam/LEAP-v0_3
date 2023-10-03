@@ -14,6 +14,29 @@ namespace LEAP_v0_3
 {
     public partial class PasswordChangeWindow : Form
     {
+    //      ***** Password Change Window Class *****
+    //
+    //
+    //      *** Class description ***
+    //
+    //
+    // The first password of each newly registered user will be their login ID, which is recommended to be
+    // changed after the first login.This class is a descendant of the "Form" class, makes this changing
+    // procedure possible.The main elements of its graphical interface are the „old password”, „new password”
+    // and „new password confirming” text fields, as well as the "Change password" button.
+    //
+    //
+    //      *** Methods and event handlers ***
+    //
+    // ChangePasswordButton_Click event handler – by clicking on the “Change password” button,
+    // the method checks:
+    // whether all the text field are filled,
+    // whether the hash code of the old password matches with the hash code stored in the LEAP database,
+    // whether the hash code of the new password matches with the hash code of the new password confirmation?
+    // If the method finds everything correct, it enters the hash code of the new password into the LEAP
+    // database for the currently logged-in user.
+
+
         public PasswordChangeWindow()
         {
             InitializeComponent();
