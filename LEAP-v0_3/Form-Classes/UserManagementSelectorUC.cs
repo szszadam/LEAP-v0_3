@@ -12,6 +12,54 @@ using System.Windows.Forms;
 
 namespace LEAP_v0_3
 {
+    //      ***** User Management Selector User Control Class *****
+    //
+    //
+    //      *** Class description ***
+    //
+    //
+    // This class is a descendant of the "UserControl" class and it is for reviewing, selecting and modifying
+    // registered users' data. Furthermore, it provides access to the registration window, where the
+    // administrator can register a new user. The main elements of its graphical interface: the
+    // "DataGridView" list for user selection, the "Create new user account" button, the "Modify user’s data"
+    // button, and the "Delete user account" button.
+    //
+    //
+    //      *** Methods and event handlers ***
+    //
+    //
+    // UserManagementSelectorUC_Load() event handler - When the User Management Selector User Control is
+    // loaded, it calls the FillUserSelectorDGV() method.
+    //
+    //
+    // FillUserSelectorDGV() – This method fills the "DataGridView"with data listing registered users. The
+    // method uses some auxiliary variables during its runtime, and in addition to these, it also uses the
+    // method named "ConvertTaughtSubjectsToString_Comma()".
+    //
+    //
+    // ConvertTaughtSubjectsToString_Comma() – if the current user is an administrator or a teacher, her/his
+    // taught subjects are displayed in the “Taught subjects” column of the "DataGridView", separated by
+    // commas. This comma separation and concatenation into a text is done by this method.
+    //
+    //
+    // CreateNewUserButton_Click() event handler – By clicking on the "Create new user account" button, it
+    // creates a new instance of the "UserDataInputWindow" class and opens it in a new window in “new user
+    // registration” mode.
+    //
+    //
+    // UserDataModificationButton_Click() event handler - By clicking on the "Modify user’s data" button, it
+    // creates a new instance of the "UserDataInputWindow" class and opens it in a new window in “data
+    // modification” mode,  with text fields filled with the data of the user selected in the "DataGridView"
+    // list.
+    //
+    //
+    // DeleteUserButton_Click() event handler –  after an approval, it deletes the user selected in the
+    // "DataGridView" list. The user will be deleted from the "Users" table and the individual test sheets
+    // belonging to this user will be also deleted from the "IndividualTestSheets" table of the LEAP
+    // database. At the end of the process, it calls the Program.ReadDataFromDatabase() method and the
+    // FillUserSelectorDGV() method.
+
+
     public partial class UserManagementSelectorUC : UserControl
     {
         public UserManagementSelectorUC()
@@ -147,7 +195,7 @@ namespace LEAP_v0_3
                         MessageBox.Show("Connection failed", "Error");
                     }
                     Program.ReadDataFromDatabase();
-                    RefreshTableButton_Click(this, EventArgs.Empty);
+                    FillUserSelectorDGV();
                 } 
             }
         }
