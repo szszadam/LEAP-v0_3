@@ -12,6 +12,66 @@ using System.Windows.Forms;
 
 namespace LEAP_v0_3
 {
+    //      ***** User Data Input Window Class *****
+    //
+    //
+    //      *** Class description ***
+    //
+    //
+    // This class is a descendant of the "Form" class, and it is used when registering a new user or changing
+    // data of an existing user.The main elements of its graphic interface are the following: last name text
+    // field, first name text field, authorization level drop-down list.Furthermore, there is a text field
+    // for the taught subjects, a year drop-down list, a class drop-down list.These last three items become
+    // available depending on the authorization level set by the administrator. There are two further buttons
+    // on this graphic  interface. During registration of a new user, the "New user registration" button
+    // appears.During changing data of an existing user, the "Change user data" button appears.
+    //
+    //
+    //      *** Methods and event handlers ***
+    //
+    //
+    // Further_Initializations() – the method populates the dropdown lists with the appropriate values.
+    //
+    //
+    // UserRegistrationButton_Click()–   when the "New user registration" button is clicked a new user is
+    // created in the "Users" table of the LEAP database, based on the data entered in the various text
+    // fields and the data selected from the drop-down lists.
+    // By using the UserIdentification.UserIdentificationNumberGenerator() method, it will generate a “user
+    // identification number” for the new user(and it will be also her/his first password). But the character
+    // string of the “user identification number” also has to contain the database ID(see the
+    // UserIdentificationNumberGenerator method of the UserIdentification class).  However,  because of the
+    // fact that there is no database ID before the registration of the new user, the proper way to make the
+    // new user searchable at first time in the database is giving her/him a temporary, unique “user
+    // identification number”. This early “user identification number” will be a random generated number
+    // temporarily.This termporary "user identification number" will be overwritten after first re-reading
+    // the data from the database, when the new user will already have a database ID.So, by using this
+    // database ID, the method can already generate the new “user identification number” and the new first
+    // password in the LEAP application.
+    //
+    //
+    // UserDataModificationButton_Click() event handler – by clicking on the "Modify user data" button, the
+    // modified data from the text fields and drop-down lists will be uploaded to the proper row of the
+    // "Users" table in the LEAP database. Basically these text fields are filled with the original data of
+    // the selected user, but the administrator can modify them.
+    //
+    //
+    // ConvertTaughtSubjectsToString_UnitSeparator() – for the time of uploading data to the LEAP database,
+    // if the user whose data is registered or changed is a teacher or administrator, then this method
+    // generates a one-line string text from the taught subjects entered in the taught subjects text field,
+    // (separated by commas,). In the database the subjects will be separated from each other by the „unit
+    // separator” character '▼'.
+    //
+    //
+    // UppercaseInitial() – this method capitalize the initial letter of the taught subject’s names when
+    // listing into the DataGridView.
+    //
+    //
+    // AuthorizationLevelComboBox_SelectedIndexChanged()–   this method runs when the authorization level
+    // dropdown list is selected. As a result,  on the graphic interface the taught subjects, the grade and
+    // the class fields will appear or disappear.It depends on what is the selected authorization level
+    // (administrator, teacher or student).
+
+
     public partial class UserDataInputWindow : Form
     {
         int UserID_Auxiliary;
